@@ -2,8 +2,38 @@ import csv
 from pathlib import Path
 
 
+def get_name_data_from_file():
+    folder = Path("data/names")
+    animals_file = folder / "animals.txt"
+    things_file = folder / "things.txt"
+    prename_file = folder / "pre_name.txt"
+
+    name_data = {
+        "Animals": [],
+        "Things": [],
+        "Pre-Names": []
+    }
+
+    animals = open(animals_file)
+    for animal in animals:
+        name_data["Animals"].append(list(map(str.strip, animal.split(','))))
+    animals.close()
+
+    things = open(things_file)
+    for thing in things:
+        name_data["Things"].append(list(map(str.strip, thing.split(','))))
+    things.close()
+
+    prenames = open(prename_file)
+    for prename in prenames:
+        name_data["Pre-Names"].append(prename.strip())
+    prenames.close()
+
+    return name_data
+
+
 def get_place_data_from_file():
-    out_folder = Path("data")
+    folder = Path("data/places")
     place_data = {
         "Cities": [],
         "Towns": [],
@@ -12,11 +42,11 @@ def get_place_data_from_file():
         "Education": []
     }
 
-    cities_file = out_folder / "cities.txt"
-    towns_file = out_folder / "towns.txt"
-    villages_file = out_folder / "villages.txt"
-    suburban_file = out_folder / "suburban.txt"
-    education_file = out_folder / "education.txt"
+    cities_file = folder / "cities.txt"
+    towns_file = folder / "towns.txt"
+    villages_file = folder / "villages.txt"
+    suburban_file = folder / "suburban.txt"
+    education_file = folder / "education.txt"
 
     cities = open(cities_file)
     for city in cities:

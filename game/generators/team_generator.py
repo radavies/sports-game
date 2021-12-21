@@ -1,31 +1,102 @@
+import random
+from utils import get_name_data_from_file
+from game.team import Team
+from game.names import Names
+
+
 class TeamGenerator:
 
     def __init__(self, places):
         self.generated_teams = []
-        self.place_data = places.places.copy()
+        self.places = places
+        self.names = Names(get_name_data_from_file())
 
     def generate_teams_for_league(self, league):
+        probabilities = {
+            "Cities": 0,
+            "Towns or Suburban Areas": 0,
+            "Villages": 0,
+            "Education": 0
+        }
 
-        city_chance = 75
-        if league.league_rank == 1:
-            city_chance = 50
+        if league.league_rank == 0:
+            probabilities["Cities"] = 90
+            probabilities["Towns or Suburban Areas"] = 99
+            probabilities["Villages"] = 100
+            probabilities["Education"] = 101
+
+        elif league.league_rank == 1:
+            probabilities["Cities"] = 70
+            probabilities["Towns or Suburban Areas"] = 95
+            probabilities["Villages"] = 100
+            probabilities["Education"] = 101
+
         elif league.league_rank > 1:
-            city_chance = 25
-
-        town_or_sub_chance = 90
-        if league.league_rank == 1:
-            town_or_sub_chance = 75
-        elif league.league_rank > 1:
-            town_or_sub_chance = 50
-
-        village_chance = 100
-        if league.league_rank == 1:
-            town_or_sub_chance = 90
-        elif league.league_rank > 1:
-            town_or_sub_chance = 85
-
+            probabilities["Cities"] = 30
+            probabilities["Towns or Suburban Areas"] = 75
+            probabilities["Villages"] = 85
+            probabilities["Education"] = 100
 
         for counter in range(0, league.total_teams):
+            type_choice = random.randint(1, 100)
+            if type_choice <= probabilities["Cities"]:
+                league.teams.append(self.generate_team(
+                    self.select_place(league.country, "Cities", True)
+                ))
+            elif type_choice <= probabilities["Towns or Suburban Areas"]:
+                league.teams.append(self.generate_team(
+                    self.select_place(league.country, "Towns or Suburban Areas", True)
+                ))
+            elif type_choice <= probabilities["Villages"]:
+                league.teams.append(self.generate_team(
+                    self.select_place(league.country, "Villages", True)
+                ))
+            else:
+                league.teams.append(self.generate_team(
+                    self.select_place(league.country, "Education", False)
+                ))
 
+    def select_place(self, country, place_type, search_down):
+        open_options = []
+        if place_type != "Towns or Suburban Areas":
+            open_options.extend(
+                [option for option in self.places.places[country][place_type] if not option["Has Team"]]
+            )
+        else:
+            open_options.extend(
+                [option for option in self.places.places[country]["Towns"] if not option["Has Team"]]
+            )
+            open_options.extend(
+                [option for option in self.places.places[country]["Suburban Areas"] if not option["Has Team"]]
+            )
 
+        if len(open_options) == 0:
+            if search_down:
+                if place_type == "Cities":
+                    return self.select_place(country, "Towns or Suburban Areas", search_down)
+                elif place_type == "Towns or Suburban Areas":
+                    return self.select_place(country, "Villages", search_down)
+                elif place_type == "Villages":
+                    return self.select_place(country, "Education", search_down)
+                else:
+                    return self.select_place(country, "Cities", not search_down)
+            else:
+                if place_type == "Cities":
+                    return self.select_place(country, "Education", not search_down)
+                elif place_type == "Towns or Suburban Areas":
+                    return self.select_place(country, "Cities", search_down)
+                elif place_type == "Villages":
+                    return self.select_place(country, "Towns or Suburban Areas", search_down)
+                else:
+                    return self.select_place(country, "Villages", search_down)
 
+        choice = random.randint(0, len(open_options) - 1)
+        place_to_use = open_options[choice]
+        place_to_use["Has Team"] = True
+        return place_to_use
+
+    def generate_team(self, place):
+        return Team(self.generate_team_name(place), place)
+
+    def generate_team_name(self, place):
+        return self.names.generate_name(place["Name"], True)

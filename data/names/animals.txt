@@ -1,0 +1,102 @@
+Gibbon,Gibbons
+Chimpanzee,Chimpanzees
+Gorilla,Gorillas
+Orangutan,Orangutans
+Bonobos,Bonobos
+Dog,Dogs
+Cat,Cats
+Seal,Seals
+Black Bear,Black Bears
+Bear,Bears
+Grizzly, Grizzlies
+Brown Bear,Brown Bears
+Polar Bear, Polar Bears
+Wolf,Wolves
+Otter,Otters
+Leopard,Leopards
+Hyena,Hyenas
+Lion,Lions
+Fox,Foxes
+Panda, Pandas
+Lynx, Lynxes
+Snow Leopard,Snow Leopard
+Cheetah,Cheetahs
+Tiger,Tigers
+Raccoon,Raccoons
+Ferret,Ferrets
+Cattle,Cattle
+Pig,Pigs
+Sheep,Sheep
+Mountain Goat,Mountain Goats
+Buffalo,Buffalo
+Bull,Bulls
+Deer,Deer
+Impala,Impalas
+Springbok,Springboks
+Moose,Moose
+Bison,Bison
+Hippopotamus,Hippopotamuses
+Yak,Yaks
+Camel,Camels
+Lama glama,Llama,Lama,Lama
+Alpaca,Alpacas
+Duck,Ducks
+Magpie,Migpies
+Goose,Geese
+Swan,Swans
+Stork,Storks
+Heron,Herons
+Dove,Doves
+Pigeon,Pigeons
+Cuckoo,Cuckoos
+Kestrel,Kestrels
+Buzzard,Buzzards
+Falcon,Falcons
+Red Kite,Red Kites
+Hawk,Hawks
+Vulture,Vultures
+Eagle,Eagles
+Pheasant,Pheasants
+Ptarmigan,Ptarmigans
+Grouse,Grouse
+Pelican,Pelicans
+Puffin,Puffins
+Flamingo,Flamingos
+Woodpecker,Woodpeckers
+Albatross,Albatrosses
+Penguin,Penguins
+Owl,Owls
+Emu,Emus
+Kiwi,Kiwis
+Sparrow,Sparrows
+Raven,Ravens
+Shark,Sharks
+Salmon,Salmon
+Dolphin,Dolphins
+Tuna,Tuna
+Pike,Pikes
+Haddock,Haddocks
+Crab,Crabs
+Turtle,Turtles
+Tortoise,Tortoises
+Lobster,Lobsters
+Eel,Eels
+Cobra,Cobras
+Crocodile,Crocodiles
+Alligator,Alligators
+Gecko,Geckos
+Scorpion,Scorpions
+Tarantula,Tarantulas
+Wasp,Wasps
+Hornet,Hornets
+Bee,Bees
+Ant,Ants
+Dragon,Dragons
+Velociraptor,Velociraptors
+Pine,Pines
+Redwood,Redwoods
+Thistle,Thistles
+Cacti,Cacti
+Oak,Oaks
+Rose,Roses
+Virus,Viruses

@@ -11,15 +11,15 @@ class LeagueGenerator:
             "England & Wales": []
         }
 
-        scot_prem = League("Scottish Premier League", "{} Scottish Premier League", 0, 2, 18, None)
-        scot_champ = League("Scottish Championship", "{} Scottish Championship", 1, 2, 18, None)
+        scot_prem = League("Scottish Premier League", "Scotland", "{} Scottish Premier League", 0, 2, 18, None)
+        scot_champ = League("Scottish Championship", "Scotland", "{} Scottish Championship", 1, 2, 18, None)
 
         leagues["Scotland"].append(scot_prem)
         leagues["Scotland"].append(scot_champ)
 
-        eng_prem = League("England & Wales Premier League", "England & Wales {} Premier League", 0, 3, 22, None)
-        eng_champ = League("England & Wales Championship", "England & Wales {} Championship", 1, 2, 18, None)
-        eng_league_one = League("England & Wales League", "England & Wales {} Junior League", 2, 3, 12, None)
+        eng_prem = League("England & Wales Premier League", "England & Wales", "England & Wales {} Premier League", 0, 3, 22, None)
+        eng_champ = League("England & Wales Championship", "England & Wales", "England & Wales {} Championship", 1, 2, 18, None)
+        eng_league_one = League("England & Wales League", "England & Wales", "England & Wales {} Junior League", 2, 3, 12, None)
 
         leagues["England & Wales"].append(eng_prem)
         leagues["England & Wales"].append(eng_champ)
