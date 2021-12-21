@@ -1,0 +1,1358 @@
+Lerwick,Shetland Islands,Scotland
+Stromness,Orkney Islands,Scotland
+Kirkwall,Orkney Islands,Scotland
+Stornoway,Na h-Eileanan an Iar,Scotland
+Thurso,Highland,Scotland
+Wick,Highland,Scotland
+Dingwall,Highland,Scotland
+Kingussie,Highland,Scotland
+Fortrose,Highland,Scotland
+Alness,Highland,Scotland
+Cromarty,Highland,Scotland
+Invergordon,Highland,Scotland
+Tain,Highland,Scotland
+Dornoch,Highland,Scotland
+Aviemore,Highland,Scotland
+Nairn,Highland,Scotland
+Grantown-on-Spey,Highland,Scotland
+Forres,Moray,Scotland
+Burghead,Moray,Scotland
+Dufftown,Moray,Scotland
+Rothes,Moray,Scotland
+Charlestown of Aberlour,Moray,Scotland
+Lossiemouth,Moray,Scotland
+Elgin,Moray,Scotland
+Alford,Aberdeenshire,Scotland
+Huntly,Aberdeenshire,Scotland
+Keith,Moray,Scotland
+Cullen,Moray,Scotland
+Findochty,Moray,Scotland
+Portsoy,Aberdeenshire,Scotland
+Buckie,Moray,Scotland
+Kintore,Aberdeenshire,Scotland
+Inverurie,Aberdeenshire,Scotland
+Turriff,Aberdeenshire,Scotland
+Aberchirder,Aberdeenshire,Scotland
+Banff,Aberdeenshire,Scotland
+Macduff,Aberdeenshire,Scotland
+Westhill,Aberdeenshire,Scotland
+Blackburn,Aberdeenshire,Scotland
+Oldmeldrum,Aberdeenshire,Scotland
+Ellon,Aberdeenshire,Scotland
+Fraserburgh,Aberdeenshire,Scotland
+Rosehearty,Aberdeenshire,Scotland
+Peterhead,Aberdeenshire,Scotland
+Tobermory,Argyll and Bute,Scotland
+Oban,Argyll and Bute,Scotland
+Inbhir Aora,Argyll and Bute,Scotland
+An Gearasdan,Highland,Scotland
+Doune,Stirling,Scotland
+Dunblane,Stirling,Scotland
+Callander,Stirling,Scotland
+Auchterarder,Perth and Kinross,Scotland
+Crieff,Perth and Kinross,Scotland
+Pitlochry,Perth and Kinross,Scotland
+Aberfeldy,Perth and Kinross,Scotland
+Kinross,Perth and Kinross,Scotland
+Blairgowrie and Rattray,Perth and Kinross,Scotland
+Ladybank,Fife,Scotland
+Markinch,Fife,Scotland
+Auchtermuchty,Fife,Scotland
+Leven,Fife,Scotland
+Cupar,Fife,Scotland
+Newburgh,Fife,Scotland
+Glenrothes,Fife,Scotland
+Falkland,Fife,Scotland
+Leslie,Fife,Scotland
+Kirriemuir,Angus,Scotland
+Alyth,Perth and Kinross,Scotland
+Coupar Angus,Perth and Kinross,Scotland
+Ballater,Aberdeenshire,Scotland
+Pittenweem,Fife,Scotland
+St Andrews,Fife,Scotland
+Anstruther,Fife,Scotland
+Broughty Ferry,Dundee City,Scotland
+Carnoustie,Angus,Scotland
+Newport-on-Tay,Fife,Scotland
+Tayport,Fife,Scotland
+Monifieth,Angus,Scotland
+Forfar,Angus,Scotland
+Brechin,Angus,Scotland
+Crail,Fife,Scotland
+Montrose,Angus,Scotland
+Arbroath,Angus,Scotland
+Laurencekirk,Aberdeenshire,Scotland
+Banchory,Aberdeenshire,Scotland
+Inverbervie,Aberdeenshire,Scotland
+Portlethen,Aberdeenshire,Scotland
+Stonehaven,Aberdeenshire,Scotland
+Ceann Loch Chille Chiarain,Argyll and Bute,Scotland
+Ceann Loch Gilb,Argyll and Bute,Scotland
+Millport,North Ayrshire,Scotland
+Rothesay,Argyll and Bute,Scotland
+Dunoon,Argyll and Bute,Scotland
+Maybole,South Ayrshire,Scotland
+Prestwick,South Ayrshire,Scotland
+Troon,South Ayrshire,Scotland
+Ayr,South Ayrshire,Scotland
+Irvine,North Ayrshire,Scotland
+Largs,North Ayrshire,Scotland
+Stevenston,North Ayrshire,Scotland
+Kilwinning,North Ayrshire,Scotland
+Saltcoats,North Ayrshire,Scotland
+Ardrossan,North Ayrshire,Scotland
+Port Glasgow,Inverclyde,Scotland
+Greenock,Inverclyde,Scotland
+Dumbarton,West Dunbartonshire,Scotland
+Gourock,Inverclyde,Scotland
+Helensburgh,Argyll and Bute,Scotland
+Alexandria,West Dunbartonshire,Scotland
+Galston,East Ayrshire,Scotland
+Newmilns,East Ayrshire,Scotland
+Cumnock,East Ayrshire,Scotland
+Kilmarnock,East Ayrshire,Scotland
+Darvel,East Ayrshire,Scotland
+Barrhead,East Renfrewshire,Scotland
+Stewarton,East Ayrshire,Scotland
+Clydebank,West Dunbartonshire,Scotland
+Johnstone,Renfrewshire,Scotland
+Erskine,Renfrewshire,Scotland
+Bearsden,East Dunbartonshire,Scotland
+Paisley,Renfrewshire,Scotland
+Renfrew,Renfrewshire,Scotland
+Milngavie,East Dunbartonshire,Scotland
+Sanquhar,Dumfries and Galloway,Scotland
+East Kilbride,South Lanarkshire,Scotland
+Motherwell,North Lanarkshire,Scotland
+Larkhall,South Lanarkshire,Scotland
+Hamilton,South Lanarkshire,Scotland
+Wishaw,North Lanarkshire,Scotland
+Airdrie,North Lanarkshire,Scotland
+Rutherglen,South Lanarkshire,Scotland
+Uddingston,South Lanarkshire,Scotland
+Cumbernauld,North Lanarkshire,Scotland
+Coatbridge,North Lanarkshire,Scotland
+Bellshill,North Lanarkshire,Scotland
+Kirkintilloch,East Dunbartonshire,Scotland
+Bishopbriggs,East Dunbartonshire,Scotland
+Kilsyth,North Lanarkshire,Scotland
+Bridge of Allan,Stirling,Scotland
+Lanark,South Lanarkshire,Scotland
+Carluke,South Lanarkshire,Scotland
+Whitburn,West Lothian,Scotland
+Bathgate,West Lothian,Scotland
+Armadale,West Lothian,Scotland
+Falkirk,Falkirk,Scotland
+Blackburn,West Lothian,Scotland
+Dollar,Clackmannanshire,Scotland
+Culross,Fife,Scotland
+Grangemouth,Falkirk,Scotland
+Tillicoultry,Clackmannanshire,Scotland
+Alva,Clackmannanshire,Scotland
+Denny,Falkirk,Scotland
+Alloa,Clackmannanshire,Scotland
+Clackmannan,Clackmannanshire,Scotland
+Moffat,Dumfries and Galloway,Scotland
+Biggar,South Lanarkshire,Scotland
+Queensferry,City of Edinburgh,Scotland
+Linlithgow,West Lothian,Scotland
+Broxburn,West Lothian,Scotland
+Livingston,West Lothian,Scotland
+Bo'ness,Falkirk,Scotland
+Cowdenbeath,Fife,Scotland
+Dunfermline,Fife,Scotland
+Inverkeithing,Fife,Scotland
+Lochgelly,Fife,Scotland
+Innerleithen,Scottish Borders,Scotland
+Peebles,Scottish Borders,Scotland
+Musselburgh,East Lothian,Scotland
+Loanhead,Midlothian,Scotland
+Penicuik,Midlothian,Scotland
+Bonnyrigg,Midlothian,Scotland
+Prestonpans,East Lothian,Scotland
+Dalkeith,Midlothian,Scotland
+Burntisland,Fife,Scotland
+Methil,Fife,Scotland
+Kirkcaldy,Fife,Scotland
+Kinghorn,Fife,Scotland
+Buckhaven,Fife,Scotland
+Hawick,Scottish Borders,Scotland
+Selkirk,Scottish Borders,Scotland
+Melrose,Scottish Borders,Scotland
+Galashiels,Scottish Borders,Scotland
+Lauder,Scottish Borders,Scotland
+Cockenzie and Port Seton,East Lothian,Scotland
+East Linton,East Lothian,Scotland
+Tranent,East Lothian,Scotland
+Haddington,East Lothian,Scotland
+North Berwick,East Lothian,Scotland
+Jedburgh,Scottish Borders,Scotland
+Kelso,Scottish Borders,Scotland
+Duns,Scottish Borders,Scotland
+Dunbar,East Lothian,Scotland
+Coldstream,Scottish Borders,Scotland
+Wooler,Northumberland,North East
+Berwick-upon-Tweed,Northumberland,North East
+Eyemouth,Scottish Borders,Scotland
+Alnwick,Northumberland,North East
+Rothbury,Northumberland,North East
+Amble,Northumberland,North East
+Stranraer,Dumfries and Galloway,Scotland
+Girvan,South Ayrshire,Scotland
+Wigtown,Dumfries and Galloway,Scotland
+Whithorn,Dumfries and Galloway,Scotland
+Gatehouse of Fleet,Dumfries and Galloway,Scotland
+Newton Stewart,Dumfries and Galloway,Scotland
+Kirkcudbright,Dumfries and Galloway,Scotland
+New Galloway,Dumfries and Galloway,Scotland
+Castle Douglas,Dumfries and Galloway,Scotland
+Whitehaven,Cumbria,North West
+Dumfries,Dumfries and Galloway,Scotland
+Dalbeattie,Dumfries and Galloway,Scotland
+Cleator Moor,Cumbria,North West
+Egremont,Cumbria,North West
+Maryport,Cumbria,North West
+Cockermouth,Cumbria,North West
+Workington,Cumbria,North West
+Aspatria,Cumbria,North West
+Silloth,Cumbria,North West
+Annan,Dumfries and Galloway,Scotland
+Lochmaben,Dumfries and Galloway,Scotland
+Lockerbie,Dumfries and Galloway,Scotland
+Ambleside,Cumbria,North West
+Keswick,Cumbria,North West
+Wigton,Cumbria,North West
+Longtown,Cumbria,North West
+Langholm,Dumfries and Galloway,Scotland
+Penrith,Cumbria,North West
+Brampton,Cumbria,North West
+Kirkby Stephen,Cumbria,North West
+Appleby-in-Westmorland,Cumbria,North West
+Alston,Cumbria,North West
+Haltwhistle,Northumberland,North East
+Stanhope,County Durham,North East
+Hexham,Northumberland,North East
+Corbridge,Northumberland,North East
+Barnard Castle,County Durham,North East
+Richmond,North Yorkshire,Yorkshire and the Humber
+Willington,County Durham,North East
+Crook,County Durham,North East
+Wolsingham,County Durham,North East
+Tow Law,County Durham,North East
+Stanley,County Durham,North East
+Annfield Plain,County Durham,North East
+Consett,County Durham,North East
+Ponteland,Northumberland,North East
+Prudhoe,Northumberland,North East
+Ryton,,North East
+Blaydon,,North East
+Morpeth,Northumberland,North East
+Darlington,Darlington,North East
+Newton Aycliffe,County Durham,North East
+Bishop Auckland,County Durham,North East
+Ferryhill,County Durham,North East
+Shildon,County Durham,North East
+Sedgefield,County Durham,North East
+Spennymoor,County Durham,North East
+Hetton-le-Hole,,North East
+Washington,,North East
+Houghton-le-Spring,,North East
+Chester-le-Street,County Durham,North East
+Tynemouth,,North East
+Whitley Bay,,North East
+Hebburn,,North East
+Whickham,,North East
+Jarrow,,North East
+South Shields,,North East
+Gateshead,,North East
+Wallsend,,North East
+Longbenton,,North East
+Cramlington,Northumberland,North East
+Ashington,Northumberland,North East
+Newbiggin-by-the-Sea,Northumberland,North East
+Bedlington,Northumberland,North East
+Blyth,Northumberland,North East
+Yarm,Stockton-on-Tees,North East
+Thornaby-on-Tees,Stockton-on-Tees,North East
+Stockton-on-Tees,Stockton-on-Tees,North East
+Middlesbrough,Middlesbrough,North East
+Hartlepool,Hartlepool,North East
+Billingham,Stockton-on-Tees,North East
+Seaham,County Durham,North East
+Peterlee,County Durham,North East
+Whitburn,,North East
+Skelton,Redcar and Cleveland,North East
+Loftus,Redcar and Cleveland,North East
+Brotton,Redcar and Cleveland,North East
+Guisborough,Redcar and Cleveland,North East
+Marske-by-the-Sea,Redcar and Cleveland,North East
+Redcar,Redcar and Cleveland,North East
+Saltburn-by-the-Sea,Redcar and Cleveland,North East
+Whitby,North Yorkshire,Yorkshire and the Humber
+Barrow-in-Furness,Cumbria,North West
+Millom,Cumbria,North West
+Southport,,North West
+Maghull,,North West
+Formby,,North West
+Poulton-le-Fylde,Lancashire,North West
+Lytham St Anne's,Lancashire,North West
+Blackpool,Blackpool,North West
+Fleetwood,Lancashire,North West
+Cleveleys,Lancashire,North West
+Thornton,Lancashire,North West
+Ulverston,Cumbria,North West
+Dalton-in-Furness,Cumbria,North West
+Broughton in Furness,Cumbria,North West
+Ince-in-Makerfield,,North West
+Chorley,Lancashire,North West
+Skelmersdale,Lancashire,North West
+Standish,,North West
+Ormskirk,Lancashire,North West
+Rainford,,North West
+Wigan,,North West
+Bamber Bridge,Lancashire,North West
+Fulwood,Lancashire,North West
+Kirkham,Lancashire,North West
+Freckleton,Lancashire,North West
+Leyland,Lancashire,North West
+Garstang,Lancashire,North West
+Grange-over-Sands,Cumbria,North West
+Carnforth,Lancashire,North West
+Heysham,Lancashire,North West
+Morecambe,Lancashire,North West
+Kendal,Cumbria,North West
+Bowness-on-Windermere,Cumbria,North West
+Windermere,Cumbria,North West
+Little Lever,,North West
+Atherton,,North West
+Hindley,,North West
+Ramsbottom,,North West
+Horwich,,North West
+Adlington,Lancashire,North West
+Farnworth,,North West
+Worsley,,North West
+Walkden,,North West
+Radcliffe,,North West
+Kearsley,,North West
+Tyldesley,,North West
+Leigh,,North West
+Bolton,,North West
+Swinton,,North West
+Westhoughton,,North West
+Clayton-le-Moors,Lancashire,North West
+Church,Lancashire,North West
+Blackburn,Blackburn with Darwen,North West
+Darwen,Blackburn with Darwen,North West
+Great Harwood,Lancashire,North West
+Longridge,Lancashire,North West
+Oswaldtwistle,Lancashire,North West
+Padiham,Lancashire,North West
+Accrington,Lancashire,North West
+Rishton,Lancashire,North West
+Haslingden,Lancashire,North West
+Clitheroe,Lancashire,North West
+High Bentham,North Yorkshire,Yorkshire and the Humber
+Kirkby Lonsdale,Cumbria,North West
+Sedbergh,Cumbria,North West
+Whitefield,,North West
+Royton,,North West
+Oldham,,North West
+Chadderton,,North West
+Heywood,,North West
+Milnrow,,North West
+Failsworth,,North West
+Shaw,,North West
+Middleton,,North West
+Whitworth,Lancashire,North West
+Lees,,North West
+Mossley,,North West
+Rochdale,,North West
+Littleborough,,North West
+Bury,,North West
+Brierfield,Lancashire,North West
+Trawden,Lancashire,North West
+Burnley,Lancashire,North West
+Barrowford,Lancashire,North West
+Rawtenstall,Lancashire,North West
+Hebden Bridge,,Yorkshire and the Humber
+Bacup,Lancashire,North West
+Nelson,Lancashire,North West
+Todmorden,,Yorkshire and the Humber
+Colne,Lancashire,North West
+Skipton,North Yorkshire,Yorkshire and the Humber
+Barnoldswick,Lancashire,North West
+Earby,Lancashire,North West
+Settle,North Yorkshire,Yorkshire and the Humber
+Huddersfield,,Yorkshire and the Humber
+Holmfirth,,Yorkshire and the Humber
+Meltham,,Yorkshire and the Humber
+Brighouse,,Yorkshire and the Humber
+Shipley,,Yorkshire and the Humber
+Elland,,Yorkshire and the Humber
+Halifax,,Yorkshire and the Humber
+Sowerby Bridge,,Yorkshire and the Humber
+Baildon,,Yorkshire and the Humber
+Liversedge,,Yorkshire and the Humber
+Bingley,,Yorkshire and the Humber
+Cleckheaton,,Yorkshire and the Humber
+Keighley,,Yorkshire and the Humber
+Silsden,,Yorkshire and the Humber
+Guiseley,,Yorkshire and the Humber
+Ilkley,,Yorkshire and the Humber
+Pateley Bridge,North Yorkshire,Yorkshire and the Humber
+Leyburn,North Yorkshire,Yorkshire and the Humber
+Middleham,North Yorkshire,Yorkshire and the Humber
+Horbury,,Yorkshire and the Humber
+Royston,,Yorkshire and the Humber
+Penistone,,Yorkshire and the Humber
+Worsbrough,,Yorkshire and the Humber
+Mirfield,,Yorkshire and the Humber
+Barnsley,,Yorkshire and the Humber
+Heckmondwike,,Yorkshire and the Humber
+Morley,,Yorkshire and the Humber
+Ossett,,Yorkshire and the Humber
+Batley,,Yorkshire and the Humber
+Rothwell,,Yorkshire and the Humber
+Pudsey,,Yorkshire and the Humber
+Dewsbury,,Yorkshire and the Humber
+Normanton,,Yorkshire and the Humber
+Harrogate,North Yorkshire,Yorkshire and the Humber
+Yeadon,,Yorkshire and the Humber
+Knaresborough,North Yorkshire,Yorkshire and the Humber
+Otley,,Yorkshire and the Humber
+Boroughbridge,North Yorkshire,Yorkshire and the Humber
+Northallerton,North Yorkshire,Yorkshire and the Humber
+Masham,North Yorkshire,Yorkshire and the Humber
+Bedale,North Yorkshire,Yorkshire and the Humber
+Hemsworth,,Yorkshire and the Humber
+Goldthorpe,,Yorkshire and the Humber
+Wath upon Dearne,,Yorkshire and the Humber
+Bentley,,Yorkshire and the Humber
+Bolton upon Dearne,,Yorkshire and the Humber
+South Elmsall,,Yorkshire and the Humber
+Adwick le Street,,Yorkshire and the Humber
+Thurnscoe,,Yorkshire and the Humber
+Featherstone,,Yorkshire and the Humber
+Doncaster,,Yorkshire and the Humber
+South Kirkby,,Yorkshire and the Humber
+Wombwell,,Yorkshire and the Humber
+Castleford,,Yorkshire and the Humber
+Knottingley,,Yorkshire and the Humber
+Pontefract,,Yorkshire and the Humber
+Garforth,,Yorkshire and the Humber
+Wetherby,,Yorkshire and the Humber
+Tadcaster,North Yorkshire,Yorkshire and the Humber
+Easingwold,North Yorkshire,Yorkshire and the Humber
+Thirsk,North Yorkshire,Yorkshire and the Humber
+Crowle,North Lincolnshire,Yorkshire and the Humber
+Thorne,,Yorkshire and the Humber
+Epworth,North Lincolnshire,Yorkshire and the Humber
+Selby,North Yorkshire,Yorkshire and the Humber
+Goole,East Riding of Yorkshire,Yorkshire and the Humber
+Howden,East Riding of Yorkshire,Yorkshire and the Humber
+Haxby,York,Yorkshire and the Humber
+Norton-on-Derwent,North Yorkshire,Yorkshire and the Humber
+Malton,North Yorkshire,Yorkshire and the Humber
+Kirkbymoorside,North Yorkshire,Yorkshire and the Humber
+Pickering,North Yorkshire,Yorkshire and the Humber
+Helmsley,North Yorkshire,Yorkshire and the Humber
+Scunthorpe,North Lincolnshire,Yorkshire and the Humber
+Winterton,North Lincolnshire,Yorkshire and the Humber
+South Cave,East Riding of Yorkshire,Yorkshire and the Humber
+Pocklington,East Riding of Yorkshire,Yorkshire and the Humber
+Market Weighton,East Riding of Yorkshire,Yorkshire and the Humber
+Pwllheli,Gwynedd - Gwynedd,Wales
+Nefyn,Gwynedd - Gwynedd,Wales
+Caergybi,Sir Ynys Mon - Isle of Anglesey,Wales
+Tywyn,Gwynedd - Gwynedd,Wales
+Porthmadog,Gwynedd - Gwynedd,Wales
+Harlech,Gwynedd - Gwynedd,Wales
+Cricieth,Gwynedd - Gwynedd,Wales
+Rhosgadfan,Gwynedd - Gwynedd,Wales
+Llangefni,Sir Ynys Mon - Isle of Anglesey,Wales
+Caernarfon,Gwynedd - Gwynedd,Wales
+Porthaethwy,Sir Ynys Mon - Isle of Anglesey,Wales
+Amlwch,Sir Ynys Mon - Isle of Anglesey,Wales
+Dolgellau,Gwynedd - Gwynedd,Wales
+Abermaw,Gwynedd - Gwynedd,Wales
+Machynlleth,Powys - Powys,Wales
+Blaenau Ffestiniog,Gwynedd - Gwynedd,Wales
+Betws-y-Coed,Conwy - Conwy,Wales
+Conwy,Conwy - Conwy,Wales
+Penmaenmawr,Conwy - Conwy,Wales
+Beaumaris,Sir Ynys Mon - Isle of Anglesey,Wales
+Bethesda,Gwynedd - Gwynedd,Wales
+Llanrwst,Conwy - Conwy,Wales
+Llanfairfechan,Conwy - Conwy,Wales
+Llandudno,Conwy - Conwy,Wales
+Y Bala,Gwynedd - Gwynedd,Wales
+Bae Colwyn,Conwy - Conwy,Wales
+Abergele,Conwy - Conwy,Wales
+Llanfyllin,Powys - Powys,Wales
+Llanfair Caereinion,Powys - Powys,Wales
+Ruthin,Sir Ddinbych - Denbighshire,Wales
+Rhuddlan,Sir Ddinbych - Denbighshire,Wales
+Treffynnon,Sir y Fflint - Flintshire,Wales
+Dinbych,Sir Ddinbych - Denbighshire,Wales
+Caerwys,Sir y Fflint - Flintshire,Wales
+Prestatyn,Sir Ddinbych - Denbighshire,Wales
+Rhyl,Sir Ddinbych - Denbighshire,Wales
+Y Trallwng,Powys - Powys,Wales
+Croesoswallt,Shropshire,West Midlands
+Ellesmere,Shropshire,West Midlands
+Y Waun,Wrecsam - Wrexham,Wales
+Wrecsam,Wrecsam - Wrexham,Wales
+Llangollen,Sir Ddinbych - Denbighshire,Wales
+Ellesmere Port,Cheshire West and Chester,North West
+Connah's Quay,Sir y Fflint - Flintshire,Wales
+Shotton,Sir y Fflint - Flintshire,Wales
+Neston,Cheshire West and Chester,North West
+Buckley,Sir y Fflint - Flintshire,Wales
+Mold,Sir y Fflint - Flintshire,Wales
+Y Fflint,Sir y Fflint - Flintshire,Wales
+Birkenhead,,North West
+Litherland,,North West
+Crosby,,North West
+Bootle,,North West
+Wallasey,,North West
+West Kirby,,North West
+Bebington,,North West
+Hoylake,,North West
+Heswall,,North West
+Shrewsbury,Shropshire,West Midlands
+Wem,Shropshire,West Midlands
+Whitchurch,Shropshire,West Midlands
+Frodsham,Cheshire West and Chester,North West
+Prescot,,North West
+Runcorn,Halton,North West
+Billinge,,North West
+Widnes,Halton,North West
+St Helens,,North West
+Newton-le-Willows,,North West
+Ashton-in-Makerfield,,North West
+Haydock,,North West
+Kirkby,,North West
+Newport,Telford and Wrekin,West Midlands
+Telford,Telford and Wrekin,West Midlands
+Broseley,Shropshire,West Midlands
+Market Drayton,Shropshire,West Midlands
+Crewe,Cheshire East,North West
+Madeley,Staffordshire,West Midlands
+Alsager,Cheshire East,North West
+Nantwich,Cheshire East,North West
+Northwich,Cheshire West and Chester,North West
+Sandbach,Cheshire East,North West
+Knutsford,Cheshire East,North West
+Winsford,Cheshire West and Chester,North West
+Middlewich,Cheshire East,North West
+Eccles,,North West
+Warrington,Warrington,North West
+Irlam,,North West
+Golborne,,North West
+Urmston,,North West
+Stretford,,North West
+Partington,,North West
+Sale,,North West
+Altrincham,,North West
+Hale,,North West
+Lymm,Warrington,North West
+Bloxwich,,West Midlands
+Penkridge,Staffordshire,West Midlands
+Cannock,Staffordshire,West Midlands
+Stafford,Staffordshire,West Midlands
+Eccleshall,Staffordshire,West Midlands
+Stone,Staffordshire,West Midlands
+Leek,Staffordshire,West Midlands
+Biddulph,Staffordshire,West Midlands
+Kidsgrove,Staffordshire,West Midlands
+Newcastle-under-Lyme,Staffordshire,West Midlands
+Congleton,Cheshire East,North West
+Macclesfield,Cheshire East,North West
+Bollington,Cheshire East,North West
+Droylsden,,North West
+Wilmslow,Cheshire East,North West
+Dukinfield,,North West
+Hyde,,North West
+Stockport,,North West
+Cheadle Hulme,,North West
+New Mills,Derbyshire,East Midlands
+Poynton,Cheshire East,North West
+Romiley,,North West
+Gatley,,North West
+Hazel Grove,,North West
+Denton,,North West
+Marple,,North West
+Stalybridge,,North West
+Ashton-under-Lyne,,North West
+Cheadle,,North West
+Bramhall,,North West
+Burntwood,Staffordshire,West Midlands
+Brownhills,,West Midlands
+Rugeley,Staffordshire,West Midlands
+Aldridge,,West Midlands
+Uttoxeter,Staffordshire,West Midlands
+Cheadle,Staffordshire,West Midlands
+Ashbourne,Derbyshire,East Midlands
+Buxton,Derbyshire,East Midlands
+Glossop,Derbyshire,East Midlands
+Whaley Bridge,Derbyshire,East Midlands
+Chapel-en-le-Frith,Derbyshire,East Midlands
+Swadlincote,Derbyshire,East Midlands
+Ashby-de-la-Zouch,Leicestershire,East Midlands
+Fazeley,Staffordshire,West Midlands
+Tamworth,Staffordshire,West Midlands
+Burton upon Trent,Staffordshire,West Midlands
+Wirksworth,Derbyshire,East Midlands
+Belper,Derbyshire,East Midlands
+Ripley,Derbyshire,East Midlands
+Chesterfield,Derbyshire,East Midlands
+Bakewell,Derbyshire,East Midlands
+Matlock,Derbyshire,East Midlands
+Dronfield,Derbyshire,East Midlands
+Darley Dale,Derbyshire,East Midlands
+Clay Cross,Derbyshire,East Midlands
+Stocksbridge,,Yorkshire and the Humber
+Market Bosworth,Leicestershire,East Midlands
+Shepshed,Leicestershire,East Midlands
+Ibstock,Leicestershire,East Midlands
+Coalville,Leicestershire,East Midlands
+Loughborough,Leicestershire,East Midlands
+West Bridgford,Nottinghamshire,East Midlands
+Beeston,Nottinghamshire,East Midlands
+Sandiacre,Derbyshire,East Midlands
+Long Eaton,Derbyshire,East Midlands
+Stapleford,Nottinghamshire,East Midlands
+Hucknall,Nottinghamshire,East Midlands
+Kirkby-in-Ashfield,Nottinghamshire,East Midlands
+Ilkeston,Derbyshire,East Midlands
+Kimberley,Nottinghamshire,East Midlands
+Eastwood,Nottinghamshire,East Midlands
+Alfreton,Derbyshire,East Midlands
+Sutton in Ashfield,Nottinghamshire,East Midlands
+Arnold,Nottinghamshire,East Midlands
+Heanor,Derbyshire,East Midlands
+Mansfield Woodhouse,Nottinghamshire,East Midlands
+Worksop,Nottinghamshire,East Midlands
+Bolsover,Derbyshire,East Midlands
+Staveley,Derbyshire,East Midlands
+Market Warsop,Nottinghamshire,East Midlands
+Shirebrook,Derbyshire,East Midlands
+Mansfield,Nottinghamshire,East Midlands
+Mexborough,,Yorkshire and the Humber
+Conisbrough,,Yorkshire and the Humber
+Rawmarsh,,Yorkshire and the Humber
+Rotherham,,Yorkshire and the Humber
+Dinnington,,Yorkshire and the Humber
+Maltby,,Yorkshire and the Humber
+Tickhill,,Yorkshire and the Humber
+Melton Mowbray,Leicestershire,East Midlands
+Syston,Leicestershire,East Midlands
+Bingham,Nottinghamshire,East Midlands
+Cotgrave,Nottinghamshire,East Midlands
+Southwell,Nottinghamshire,East Midlands
+Newark-on-Trent,Nottinghamshire,East Midlands
+Retford,Nottinghamshire,East Midlands
+Bawtry,,Yorkshire and the Humber
+Oakham,Rutland,East Midlands
+Grantham,Lincolnshire,East Midlands
+North Hykeham,Lincolnshire,East Midlands
+Gainsborough,Lincolnshire,East Midlands
+Kirton in Lindsey,North Lincolnshire,Yorkshire and the Humber
+Neyland,Sir Benfro - Pembrokeshire,Wales
+Penfro,Sir Benfro - Pembrokeshire,Wales
+Milford Haven,Sir Benfro - Pembrokeshire,Wales
+Haverfordwest,Sir Benfro - Pembrokeshire,Wales
+Doc Penfro,Sir Benfro - Pembrokeshire,Wales
+Wdig,Sir Benfro - Pembrokeshire,Wales
+Abergwaun,Sir Benfro - Pembrokeshire,Wales
+Dinbych-y-Pysgod,Sir Benfro - Pembrokeshire,Wales
+Hendy-Gwyn,Sir Gaerfyrddin - Carmarthenshire,Wales
+Arberth,Sir Benfro - Pembrokeshire,Wales
+Trefdraeth,Sir Benfro - Pembrokeshire,Wales
+Cardigan,Sir Ceredigion - Ceredigion,Wales
+Talacharn,Sir Gaerfyrddin - Carmarthenshire,Wales
+St Clears,Sir Gaerfyrddin - Carmarthenshire,Wales
+Newcastle Emlyn,Sir Gaerfyrddin - Carmarthenshire,Wales
+New Quay,Sir Ceredigion - Ceredigion,Wales
+Burry Port,Sir Gaerfyrddin - Carmarthenshire,Wales
+Pontarddulais,Abertawe - Swansea,Wales
+Cydweli,Sir Gaerfyrddin - Carmarthenshire,Wales
+Llanelli,Sir Gaerfyrddin - Carmarthenshire,Wales
+Caerfyrddin,Sir Gaerfyrddin - Carmarthenshire,Wales
+Llanbedr Pont Steffan,Sir Ceredigion - Ceredigion,Wales
+Llanybydder,Sir Gaerfyrddin - Carmarthenshire,Wales
+Llandysul,Sir Ceredigion - Ceredigion,Wales
+Aberaeron,Sir Ceredigion - Ceredigion,Wales
+Aberystwyth,Sir Ceredigion - Ceredigion,Wales
+Ystradgynlais,Powys - Powys,Wales
+Rhydaman,Sir Gaerfyrddin - Carmarthenshire,Wales
+Pontardawe,Castell-nedd Port Talbot - Neath Port Talbot,Wales
+Llandeilo,Sir Gaerfyrddin - Carmarthenshire,Wales
+Llanymddyfri,Sir Gaerfyrddin - Carmarthenshire,Wales
+Tregaron,Sir Ceredigion - Ceredigion,Wales
+Glyn-nedd,Castell-nedd Port Talbot - Neath Port Talbot,Wales
+Llanwrtyd Wells,Powys - Powys,Wales
+Rhayader,Powys - Powys,Wales
+Llanidloes,Powys - Powys,Wales
+Nantyglo,Blaenau Gwent - Blaenau Gwent,Wales
+Brynmawr,Blaenau Gwent - Blaenau Gwent,Wales
+Glyn Ebwy,Blaenau Gwent - Blaenau Gwent,Wales
+Aberdare,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Merthyr Tudful,Merthyr Tudful - Merthyr Tydfil,Wales
+Rhymney,Caerffili - Caerphilly,Wales
+Tredegar,Blaenau Gwent - Blaenau Gwent,Wales
+Brecon,Powys - Powys,Wales
+Talgarth,Powys - Powys,Wales
+Llanfair-ym-Muallt,Powys - Powys,Wales
+Llandrindod,Powys - Powys,Wales
+Newtown,Powys - Powys,Wales
+Blaenavon,Torfaen - Torfaen,Wales
+Abergavenny,Sir Fynwy - Monmouthshire,Wales
+Pont-y-pŵl,Torfaen - Torfaen,Wales
+Usk,Sir Fynwy - Monmouthshire,Wales
+Crughywel,Powys - Powys,Wales
+Abertyleri,Blaenau Gwent - Blaenau Gwent,Wales
+Blaina,Blaenau Gwent - Blaenau Gwent,Wales
+Abersychan,Torfaen - Torfaen,Wales
+Kington,County of Herefordshire,West Midlands
+Y Gelli Gandryll,Powys - Powys,Wales
+Llanandras,Powys - Powys,Wales
+Tref-y-Clawdd,Powys - Powys,Wales
+Bishop's Castle,Shropshire,West Midlands
+Trefaldwyn,Powys - Powys,Wales
+Coleford,Gloucestershire,South West
+Trefynwy,Sir Fynwy - Monmouthshire,Wales
+Ross-on-Wye,County of Herefordshire,West Midlands
+Leominster,County of Herefordshire,West Midlands
+Tenbury Wells,Worcestershire,West Midlands
+Ludlow,Shropshire,West Midlands
+Church Stretton,Shropshire,West Midlands
+Craven Arms,Shropshire,West Midlands
+Mitcheldean,Gloucestershire,South West
+Lydney,Gloucestershire,South West
+Cinderford,Gloucestershire,South West
+Ledbury,County of Herefordshire,West Midlands
+Newent,Gloucestershire,South West
+Bromyard,County of Herefordshire,West Midlands
+Great Malvern,Worcestershire,West Midlands
+Cleobury Mortimer,Shropshire,West Midlands
+Bewdley,Worcestershire,West Midlands
+Bridgnorth,Shropshire,West Midlands
+Much Wenlock,Shropshire,West Midlands
+Minchinhampton,Gloucestershire,South West
+Stroud,Gloucestershire,South West
+Painswick,Gloucestershire,South West
+Stonehouse,Gloucestershire,South West
+Tewkesbury,Gloucestershire,South West
+Cheltenham,Gloucestershire,South West
+Pershore,Worcestershire,West Midlands
+Kidderminster,Worcestershire,West Midlands
+Stourport-on-Severn,Worcestershire,West Midlands
+Droitwich Spa,Worcestershire,West Midlands
+Bromsgrove,Worcestershire,West Midlands
+Kingswinford,,West Midlands
+Willenhall,,West Midlands
+Oldbury,,West Midlands
+Stourbridge,,West Midlands
+Rowley Regis,,West Midlands
+Halesowen,,West Midlands
+Brierley Hill,,West Midlands
+Wednesbury,,West Midlands
+Darlaston,,West Midlands
+Bilston,,West Midlands
+Dudley,,West Midlands
+Tipton,,West Midlands
+Sedgley,,West Midlands
+Blackheath,,West Midlands
+Coseley,,West Midlands
+Fairford,Gloucestershire,South West
+Cirencester,Gloucestershire,South West
+Northleach,Gloucestershire,South West
+Chipping Campden,Gloucestershire,South West
+Winchcombe,Gloucestershire,South West
+Stow-on-the-Wold,Gloucestershire,South West
+Evesham,Worcestershire,West Midlands
+Alcester,Warwickshire,West Midlands
+Redditch,Worcestershire,West Midlands
+Henley-in-Arden,Warwickshire,West Midlands
+Solihull,,West Midlands
+Walsall,,West Midlands
+West Bromwich,,West Midlands
+Smethwick,,West Midlands
+Royal Sutton Coldfield,,West Midlands
+Charlbury,Oxfordshire,South East
+Carterton,Oxfordshire,South East
+Burford,Oxfordshire,South East
+Witney,Oxfordshire,South East
+Chipping Norton,Oxfordshire,South East
+Moreton-in-Marsh,Gloucestershire,South West
+Shipston-on-Stour,Warwickshire,West Midlands
+Stratford-upon-Avon,Warwickshire,West Midlands
+Warwick,Warwickshire,West Midlands
+Royal Leamington Spa,Warwickshire,West Midlands
+Whitnash,Warwickshire,West Midlands
+Kenilworth,Warwickshire,West Midlands
+Atherstone,Warwickshire,West Midlands
+Nuneaton,Warwickshire,West Midlands
+Bedworth,Warwickshire,West Midlands
+Coleshill,Warwickshire,West Midlands
+Woodstock,Oxfordshire,South East
+Kidlington,Oxfordshire,South East
+Brackley,West Northamptonshire,East Midlands
+Bicester,Oxfordshire,South East
+Banbury,Oxfordshire,South East
+Rugby,Warwickshire,West Midlands
+Southam,Warwickshire,West Midlands
+Daventry,West Northamptonshire,East Midlands
+Hinckley,Leicestershire,East Midlands
+Earl Shilton,Leicestershire,East Midlands
+Lutterworth,Leicestershire,East Midlands
+Thame,Oxfordshire,South East
+Buckingham,Buckinghamshire,South East
+Winslow,Buckinghamshire,South East
+Towcester,West Northamptonshire,East Midlands
+Northampton,West Northamptonshire,East Midlands
+Market Harborough,Leicestershire,East Midlands
+Wendover,Buckinghamshire,South East
+Princes Risborough,Buckinghamshire,South East
+Chesham,Buckinghamshire,South East
+Berkhamsted,Hertfordshire,Eastern
+Tring,Hertfordshire,Eastern
+Aylesbury,Buckinghamshire,South East
+Bletchley,Milton Keynes,South East
+Milton Keynes,Milton Keynes,South East
+Woburn Sands,Milton Keynes,South East
+Woburn,Central Bedfordshire,Eastern
+Leighton Buzzard,Central Bedfordshire,Eastern
+Newport Pagnell,Milton Keynes,South East
+Olney,Milton Keynes,South East
+Raunds,North Northamptonshire,East Midlands
+Burton Latimer,North Northamptonshire,East Midlands
+Kettering,North Northamptonshire,East Midlands
+Wellingborough,North Northamptonshire,East Midlands
+Thrapston,North Northamptonshire,East Midlands
+Higham Ferrers,North Northamptonshire,East Midlands
+Irthlingborough,North Northamptonshire,East Midlands
+Rushden,North Northamptonshire,East Midlands
+Desborough,North Northamptonshire,East Midlands
+Corby,North Northamptonshire,East Midlands
+Uppingham,Rutland,East Midlands
+Holsworthy,Devon,South West
+Bude,Cornwall,South West
+Stratton,Cornwall,South West
+Great Torrington,Devon,South West
+Northam,Devon,South West
+Bideford,Devon,South West
+Barnstaple,Devon,South West
+Ilfracombe,Devon,South West
+Gorseinon,Abertawe - Swansea,Wales
+Casllwchwr,Abertawe - Swansea,Wales
+North Tawton,Devon,South West
+South Molton,Devon,South West
+Lynton,Devon,South West
+Neath,Castell-nedd Port Talbot - Neath Port Talbot,Wales
+Port Talbot,Castell-nedd Port Talbot - Neath Port Talbot,Wales
+Crediton,Devon,South West
+Tiverton,Devon,South West
+Dulverton,Somerset,South West
+Minehead,Somerset,South West
+Llanilltud Fawr,Bro Morgannwg - the Vale of Glamorgan,Wales
+Y Bont-Faen,Bro Morgannwg - the Vale of Glamorgan,Wales
+Porthcawl,Pen-y-bont ar Ogwr - Bridgend,Wales
+Pen-y-bont ar Ogwr,Pen-y-bont ar Ogwr - Bridgend,Wales
+Pencoed,Pen-y-bont ar Ogwr - Bridgend,Wales
+Rhondda,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Maesteg,Pen-y-bont ar Ogwr - Bridgend,Wales
+Treorchy,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Treherbert,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Ferndale,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Pontycymer,Pen-y-bont ar Ogwr - Bridgend,Wales
+Honiton,Devon,South West
+Cullompton,Devon,South West
+Wellington,Somerset,South West
+Wiveliscombe,Somerset,South West
+Watchet,Somerset,South West
+Penarth,Bro Morgannwg - the Vale of Glamorgan,Wales
+Barri,Bro Morgannwg - the Vale of Glamorgan,Wales
+Tonypandy,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Abercynon,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Bargod,Caerffili - Caerphilly,Wales
+Talbot Green,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Pontllanfraith,Caerffili - Caerphilly,Wales
+Porth,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Y Coed Duon,Caerffili - Caerphilly,Wales
+Mountain Ash,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Llantrisant,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Pontypridd,Rhondda Cynon Taf - Rhondda Cynon Taf,Wales
+Caerphilly,Caerffili - Caerphilly,Wales
+Treharris,Merthyr Tudful - Merthyr Tydfil,Wales
+Ystrad Mynach,Caerffili - Caerphilly,Wales
+Chard,Somerset,South West
+Ilminster,Somerset,South West
+Bridgwater,Somerset,South West
+North Petherton,Somerset,South West
+Taunton,Somerset,South West
+Burnham-on-Sea,Somerset,South West
+Weston-Super-Mare,North Somerset,South West
+Abercarn,Caerffili - Caerphilly,Wales
+Risca,Caerffili - Caerphilly,Wales
+Trecceln,Caerffili - Caerphilly,Wales
+Cwmbrân,Torfaen - Torfaen,Wales
+Caerllion,Casnewydd - Newport,Wales
+Crewkerne,Somerset,South West
+South Petherton,Somerset,South West
+Beaminster,Dorset,South West
+Yeovil,Somerset,South West
+Langport,Somerset,South West
+Street,Somerset,South West
+Somerton,Somerset,South West
+Glastonbury,Somerset,South West
+Axbridge,Somerset,South West
+Nailsea,North Somerset,South West
+Clevedon,North Somerset,South West
+Portishead,North Somerset,South West
+Cil-y-coed,Sir Fynwy - Monmouthshire,Wales
+Cas-Gwent,Sir Fynwy - Monmouthshire,Wales
+Stalbridge,Dorset,South West
+Sturminster Newton,Dorset,South West
+Sherborne,Dorset,South West
+Bruton,Somerset,South West
+Castle Cary,Somerset,South West
+Wincanton,Somerset,South West
+Radstock,Bath and North East Somerset,South West
+Frome,Somerset,South West
+Midsomer Norton,Bath and North East Somerset,South West
+Shepton Mallet,Somerset,South West
+Keynsham,Bath and North East Somerset,South West
+Filton,South Gloucestershire,South West
+Yate,South Gloucestershire,South West
+Dursley,Gloucestershire,South West
+Bradley Stoke,South Gloucestershire,South West
+Chipping Sodbury,South Gloucestershire,South West
+Thornbury,South Gloucestershire,South West
+Wotton-under-Edge,Gloucestershire,South West
+Blandford Forum,Dorset,South West
+Gillingham,Dorset,South West
+Shaftesbury,Dorset,South West
+Mere,Wiltshire,South West
+Warminster,Wiltshire,South West
+Trowbridge,Wiltshire,South West
+Westbury,Wiltshire,South West
+Melksham,Wiltshire,South West
+Bradford-on-Avon,Wiltshire,South West
+Corsham,Wiltshire,South West
+Chippenham,Wiltshire,South West
+Calne,Wiltshire,South West
+Malmesbury,Wiltshire,South West
+Nailsworth,Gloucestershire,South West
+Tetbury,Gloucestershire,South West
+Ringwood,Hampshire,South East
+Ferndown,Dorset,South West
+Verwood,Dorset,South West
+Fordingbridge,Hampshire,South East
+Wilton,Wiltshire,South West
+Amesbury,Wiltshire,South West
+Devizes,Wiltshire,South West
+Marlborough,Wiltshire,South West
+Swindon,Swindon,South West
+Cricklade,Wiltshire,South West
+Royal Wootton Bassett,Wiltshire,South West
+Totton,Hampshire,South East
+Romsey,Hampshire,South East
+Tidworth,Wiltshire,South West
+Ludgershall,Wiltshire,South West
+Andover,Hampshire,South East
+Hungerford,West Berkshire,South East
+Lechlade-on-Thames,Gloucestershire,South West
+Highworth,Swindon,South West
+Wantage,Oxfordshire,South East
+Faringdon,Oxfordshire,South East
+Bishop's Waltham,Hampshire,South East
+Fareham,Hampshire,South East
+Hedge End,Hampshire,South East
+Eastleigh,Hampshire,South East
+Wickham,Hampshire,South East
+New Alresford,Hampshire,South East
+Whitchurch,Hampshire,South East
+Tadley,Hampshire,South East
+Newbury,West Berkshire,South East
+Thatcham,West Berkshire,South East
+Abingdon-on-Thames,Oxfordshire,South East
+Didcot,Oxfordshire,South East
+Emsworth,Hampshire,South East
+Havant,Hampshire,South East
+Horndean,Hampshire,South East
+Alton,Hampshire,South East
+Petersfield,Hampshire,South East
+Bordon,Hampshire,South East
+Basingstoke,Hampshire,South East
+Woodley,Wokingham,South East
+Reading,Reading,South East
+Wallingford,Oxfordshire,South East
+Henley-on-Thames,Oxfordshire,South East
+Watlington,Oxfordshire,South East
+Petworth,West Sussex,South East
+Haslemere,Surrey,South East
+Midhurst,West Sussex,South East
+Frimley,Surrey,South East
+Godalming,Surrey,South East
+Guildford,Surrey,South East
+Farnborough,Hampshire,South East
+Aldershot,Hampshire,South East
+Farnham,Surrey,South East
+Blackwater,Hampshire,South East
+Fleet,Hampshire,South East
+Crowthorne,Bracknell Forest,South East
+Camberley,Surrey,South East
+Windsor,Windsor and Maidenhead,South East
+Eton,Windsor and Maidenhead,South East
+Slough,Slough,South East
+Bracknell,Bracknell Forest,South East
+Yateley,Hampshire,South East
+Sandhurst,Bracknell Forest,South East
+Wokingham,Wokingham,South East
+Beaconsfield,Buckinghamshire,South East
+High Wycombe,Buckinghamshire,South East
+Amersham,Buckinghamshire,South East
+Maidenhead,Windsor and Maidenhead,South East
+Marlow,Buckinghamshire,South East
+Hugh Town,Isles of Scilly,South West
+St Just,Cornwall,South West
+Penzance,Cornwall,South West
+Hayle,Cornwall,South West
+Newlyn,Cornwall,South West
+Marazion,Cornwall,South West
+St Ives,Cornwall,South West
+Helston,Cornwall,South West
+Penryn,Cornwall,South West
+Camborne,Cornwall,South West
+Redruth,Cornwall,South West
+Falmouth,Cornwall,South West
+Newquay,Cornwall,South West
+Padstow,Cornwall,South West
+St Columb Major,Cornwall,South West
+Wadebridge,Cornwall,South West
+St Austell,Cornwall,South West
+Lostwithiel,Cornwall,South West
+Fowey,Cornwall,South West
+St Blazey,Cornwall,South West
+Bodmin,Cornwall,South West
+Camelford,Cornwall,South West
+Looe,Cornwall,South West
+Callington,Cornwall,South West
+Liskeard,Cornwall,South West
+Launceston,Cornwall,South West
+Saltash,Cornwall,South West
+Torpoint,Cornwall,South West
+Sherford,Devon,South West
+Tavistock,Devon,South West
+Okehampton,Devon,South West
+Salcombe,Devon,South West
+Kingsbridge,Devon,South West
+Ivybridge,Devon,South West
+Buckfastleigh,Devon,South West
+Ashburton,Devon,South West
+Moretonhampstead,Devon,South West
+Chagford,Devon,South West
+Brixham,Torbay,South West
+Dartmouth,Devon,South West
+Totnes,Devon,South West
+Chudleigh,Devon,South West
+Torquay,Torbay,South West
+Teignmouth,Devon,South West
+Bovey Tracey,Devon,South West
+Newton Abbot,Devon,South West
+Dawlish,Devon,South West
+Paignton,Torbay,South West
+Kingsteignton,Devon,South West
+Topsham,Devon,South West
+Exmouth,Devon,South West
+Sidmouth,Devon,South West
+Budleigh Salterton,Devon,South West
+Ottery St Mary,Devon,South West
+Colyton,Devon,South West
+Axminster,Devon,South West
+Seaton,Devon,South West
+Lyme Regis,Dorset,South West
+Bridport,Dorset,South West
+Fortuneswell,Dorset,South West
+Weymouth,Dorset,South West
+Chickerell,Dorset,South West
+Dorchester,Dorset,South West
+Wareham,Dorset,South West
+Swanage,Dorset,South West
+Christchurch,Bournemouth, Christchurch and Poole,South West
+Bournemouth,Bournemouth, Christchurch and Poole,South West
+Wimborne Minster,Dorset,South West
+Poole,Bournemouth, Christchurch and Poole,South West
+Yarmouth,Isle of Wight,South East
+New Milton,Hampshire,South East
+Lymington,Hampshire,South East
+Ventnor,Isle of Wight,South East
+Cowes,Isle of Wight,South East
+Newport,Isle of Wight,South East
+East Cowes,Isle of Wight,South East
+Ryde,Isle of Wight,South East
+Shanklin,Isle of Wight,South East
+Gosport,Hampshire,South East
+Brading,Isle of Wight,South East
+Sandown,Isle of Wight,South East
+Selsey,West Sussex,South East
+Bognor Regis,West Sussex,South East
+Brigg,North Lincolnshire,Yorkshire and the Humber
+Immingham,North East Lincolnshire,Yorkshire and the Humber
+Hedon,East Riding of Yorkshire,Yorkshire and the Humber
+Hessle,East Riding of Yorkshire,Yorkshire and the Humber
+Cottingham,East Riding of Yorkshire,Yorkshire and the Humber
+Beverley,East Riding of Yorkshire,Yorkshire and the Humber
+Barton-upon-Humber,North Lincolnshire,Yorkshire and the Humber
+Driffield,East Riding of Yorkshire,Yorkshire and the Humber
+Bridlington,East Riding of Yorkshire,Yorkshire and the Humber
+Filey,North Yorkshire,Yorkshire and the Humber
+Scarborough,North Yorkshire,Yorkshire and the Humber
+Grimsby,North East Lincolnshire,Yorkshire and the Humber
+Cleethorpes,North East Lincolnshire,Yorkshire and the Humber
+Withernsea,East Riding of Yorkshire,Yorkshire and the Humber
+Hornsea,East Riding of Yorkshire,Yorkshire and the Humber
+Market Deeping,Lincolnshire,East Midlands
+Stamford,Lincolnshire,East Midlands
+Bourne,Lincolnshire,East Midlands
+Sleaford,Lincolnshire,East Midlands
+Heckington,Lincolnshire,East Midlands
+Wragby,Lincolnshire,East Midlands
+Woodhall Spa,Lincolnshire,East Midlands
+Market Rasen,Lincolnshire,East Midlands
+Crowland,Lincolnshire,East Midlands
+Spalding,Lincolnshire,East Midlands
+Boston,Lincolnshire,East Midlands
+Horncastle,Lincolnshire,East Midlands
+Louth,Lincolnshire,East Midlands
+Wisbech,Cambridgeshire,Eastern
+Long Sutton,Lincolnshire,East Midlands
+Wainfleet All Saints,Lincolnshire,East Midlands
+Skegness,Lincolnshire,East Midlands
+Spilsby,Lincolnshire,East Midlands
+Mablethorpe,Lincolnshire,East Midlands
+King's Lynn,Norfolk,Eastern
+Downham Market,Norfolk,Eastern
+Hunstanton,Norfolk,Eastern
+Swaffham,Norfolk,Eastern
+Dereham,Norfolk,Eastern
+Watton,Norfolk,Eastern
+Fakenham,Norfolk,Eastern
+Wells-next-the-Sea,Norfolk,Eastern
+Wymondham,Norfolk,Eastern
+Hingham,Norfolk,Eastern
+Aylsham,Norfolk,Eastern
+Holt,Norfolk,Eastern
+Reepham,Norfolk,Eastern
+Sheringham,Norfolk,Eastern
+North Walsham,Norfolk,Eastern
+Stalham,Norfolk,Eastern
+Cromer,Norfolk,Eastern
+Caister-on-Sea,Norfolk,Eastern
+Gorleston-on-Sea,Norfolk,Eastern
+Great Yarmouth,Norfolk,Eastern
+Harpenden,Hertfordshire,Eastern
+Hemel Hempstead,Hertfordshire,Eastern
+Shefford,Central Bedfordshire,Eastern
+Flitwick,Central Bedfordshire,Eastern
+Ampthill,Central Bedfordshire,Eastern
+Hitchin,Hertfordshire,Eastern
+Houghton Regis,Central Bedfordshire,Eastern
+Luton,Luton,Eastern
+Dunstable,Central Bedfordshire,Eastern
+Wixams,Bedford,Eastern
+Biggleswade,Central Bedfordshire,Eastern
+Sandy,Central Bedfordshire,Eastern
+Bedford,Bedford,Eastern
+Kempston,Bedford,Eastern
+St Neots,Cambridgeshire,Eastern
+Oundle,North Northamptonshire,East Midlands
+Potters Bar,Hertfordshire,Eastern
+Hatfield,Hertfordshire,Eastern
+Hertford,Hertfordshire,Eastern
+Waltham Abbey,Essex,Eastern
+Welwyn Garden City,Hertfordshire,Eastern
+Cheshunt,Hertfordshire,Eastern
+Ware,Hertfordshire,Eastern
+Hoddesdon,Hertfordshire,Eastern
+Waltham Cross,Hertfordshire,Eastern
+Stotfold,Central Bedfordshire,Eastern
+Letchworth,Hertfordshire,Eastern
+Stevenage,Hertfordshire,Eastern
+Buntingford,Hertfordshire,Eastern
+Baldock,Hertfordshire,Eastern
+Potton,Central Bedfordshire,Eastern
+Royston,Hertfordshire,Eastern
+Huntingdon,Cambridgeshire,Eastern
+Godmanchester,Cambridgeshire,Eastern
+St Ives,Cambridgeshire,Eastern
+Whittlesey,Cambridgeshire,Eastern
+Chatteris,Cambridgeshire,Eastern
+Ramsey,Cambridgeshire,Eastern
+Harlow,Essex,Eastern
+Sawbridgeworth,Hertfordshire,Eastern
+Chipping Ongar,Essex,Eastern
+Epping,Essex,Eastern
+Bishop's Stortford,Hertfordshire,Eastern
+Saffron Walden,Essex,Eastern
+Stansted Mountfitchet,Essex,Eastern
+Soham,Cambridgeshire,Eastern
+March,Cambridgeshire,Eastern
+Braintree,Essex,Eastern
+Thaxted,Essex,Eastern
+Great Dunmow,Essex,Eastern
+Haverhill,Suffolk,Eastern
+Clare,Suffolk,Eastern
+Newmarket,Suffolk,Eastern
+Mildenhall,Suffolk,Eastern
+Brandon,Suffolk,Eastern
+Maldon,Essex,Eastern
+Witham,Essex,Eastern
+Coggeshall,Essex,Eastern
+Halstead,Essex,Eastern
+Colchester,Essex,Eastern
+Sudbury,Suffolk,Eastern
+Acton,Suffolk,Eastern
+Bury St Edmunds,Suffolk,Eastern
+Thetford,Norfolk,Eastern
+Clacton-on-Sea,Essex,Eastern
+Brightlingsea,Essex,Eastern
+West Mersea,Essex,Eastern
+Manningtree,Essex,Eastern
+Wivenhoe,Essex,Eastern
+Hadleigh,Suffolk,Eastern
+Ipswich,Suffolk,Eastern
+Needham Market,Suffolk,Eastern
+Stowmarket,Suffolk,Eastern
+Eye,Suffolk,Eastern
+Diss,Norfolk,Eastern
+Attleborough,Norfolk,Eastern
+Frinton-on-Sea,Essex,Eastern
+Felixstowe,Suffolk,Eastern
+Walton-on-the-Naze,Essex,Eastern
+Harwich,Essex,Eastern
+Wickham Market,Suffolk,Eastern
+Woodbridge,Suffolk,Eastern
+Kesgrave,Suffolk,Eastern
+Saxmundham,Suffolk,Eastern
+Halesworth,Suffolk,Eastern
+Framlingham,Suffolk,Eastern
+Bungay,Suffolk,Eastern
+Harleston,Norfolk,Eastern
+Loddon,Norfolk,Eastern
+Aldeburgh,Suffolk,Eastern
+Leiston,Suffolk,Eastern
+Southwold,Suffolk,Eastern
+Lowestoft,Suffolk,Eastern
+Beccles,Suffolk,Eastern
+Arundel,West Sussex,South East
+Worthing,West Sussex,South East
+Littlehampton,West Sussex,South East
+Steyning,West Sussex,South East
+Horsham,West Sussex,South East
+Leatherhead,Surrey,South East
+Dorking,Surrey,South East
+Woking,Surrey,South East
+Ashford,Surrey,South East
+Egham,Surrey,South East
+Walton-on-Thames,Surrey,South East
+Addlestone,Surrey,South East
+Weybridge,Surrey,South East
+Staines-upon-Thames,Surrey,South East
+Esher,Surrey,South East
+Sunbury-on-Thames,Surrey,South East
+Chertsey,Surrey,South East
+Radlett,Hertfordshire,Eastern
+Borehamwood,Hertfordshire,Eastern
+Chorleywood,Hertfordshire,Eastern
+Gerrards Cross,Buckinghamshire,South East
+Watford,Hertfordshire,Eastern
+Rickmansworth,Hertfordshire,Eastern
+Bushey,Hertfordshire,Eastern
+Shoreham-by-Sea,West Sussex,South East
+Southwick,West Sussex,South East
+Burgess Hill,West Sussex,South East
+Haywards Heath,West Sussex,South East
+Crawley,West Sussex,South East
+East Grinstead,West Sussex,South East
+Cuckfield,West Sussex,South East
+Caterham,Surrey,South East
+Redhill,Surrey,South East
+Banstead,Surrey,South East
+Warlingham,Surrey,South East
+Reigate,Surrey,South East
+Oxted,Surrey,South East
+Horley,Surrey,South East
+Ewell,Surrey,South East
+Epsom,Surrey,South East
+Lewes,East Sussex,South East
+Polegate,East Sussex,South East
+Peacehaven,East Sussex,South East
+Hailsham,East Sussex,South East
+Newhaven,East Sussex,South East
+Heathfield,East Sussex,South East
+Royal Tunbridge Wells,Kent,South East
+Uckfield,East Sussex,South East
+Crowborough,East Sussex,South East
+Sevenoaks,Kent,South East
+Edenbridge,Kent,South East
+Tonbridge,Kent,South East
+Westerham,Kent,South East
+Southborough,Kent,South East
+Swanscombe,Kent,South East
+Swanley,Kent,South East
+Dartford,Kent,South East
+Chigwell,Essex,Eastern
+Loughton,Essex,Eastern
+Brentwood,Essex,Eastern
+Battle,East Sussex,South East
+Bexhill-on-Sea,East Sussex,South East
+Wadhurst,East Sussex,South East
+Maidstone,Kent,South East
+Paddock Wood,Kent,South East
+West Malling,Kent,South East
+Snodland,Kent,South East
+Northfleet,Kent,South East
+Grays,Thurrock,Eastern
+Tilbury,Thurrock,Eastern
+Chatham,Medway,South East
+Gillingham,Medway,South East
+Gravesend,Kent,South East
+Rochester,Medway,South East
+Canvey Island,Essex,Eastern
+Stanford-le-Hope,Thurrock,Eastern
+Wickford,Essex,Eastern
+Billericay,Essex,Eastern
+Basildon,Essex,Eastern
+Hastings,East Sussex,South East
+Rye,East Sussex,South East
+Tenterden,Kent,South East
+Minster,Kent,South East
+Queenborough,Kent,South East
+Sittingbourne,Kent,South East
+Sheerness,Kent,South East
+Southend-on-Sea,Southend-on-Sea,Eastern
+Leigh-on-Sea,Southend-on-Sea,Eastern
+Rochford,Essex,Eastern
+Rayleigh,Essex,Eastern
+Burnham-on-Crouch,Essex,Eastern
+Southminster,Essex,Eastern
+South Woodham Ferrers,Essex,Eastern
+Hythe,Kent,South East
+Lydd,Kent,South East
+New Romney,Kent,South East
+Ashford,Kent,South East
+Faversham,Kent,South East
+Herne Bay,Kent,South East
+Whitstable,Kent,South East
+Folkestone,Kent,South East
+Deal,Kent,South East
+Dover,Kent,South East
+Sandwich,Kent,South East
+Ramsgate,Kent,South East
+Margate,Kent,South East
+Broadstairs,Kent,South East
+Seaford,East Sussex,South East
+Eastbourne,East Sussex,South East

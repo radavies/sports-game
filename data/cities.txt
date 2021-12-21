@@ -1,0 +1,65 @@
+Inverness,Highland,Scotland
+Aberdeen,Aberdeen City,Scotland
+Perth,Perth and Kinross,Scotland
+Dundee,Dundee City,Scotland
+Glasgow,Glasgow City,Scotland
+Stirling,Stirling,Scotland
+Edinburgh,City of Edinburgh,Scotland
+Carlisle,Cumbria,North West
+Sunderland,,North East
+Durham,County Durham,North East
+Newcastle upon Tyne,,North East
+Preston,Lancashire,North West
+Lancaster,Lancashire,North West
+Bradford,,Yorkshire and the Humber
+Leeds,,Yorkshire and the Humber
+Wakefield,,Yorkshire and the Humber
+Ripon,North Yorkshire,Yorkshire and the Humber
+York,York,Yorkshire and the Humber
+Bangor,Gwynedd - Gwynedd,Wales
+Llanelwy,Sir Ddinbych - Denbighshire,Wales
+Liverpool,,North West
+Chester,Cheshire West and Chester,North West
+Stoke-on-Trent,City of Stoke-on-Trent,West Midlands
+Salford,,North West
+Manchester,,North West
+Lichfield,Staffordshire,West Midlands
+Derby,City of Derby,East Midlands
+Sheffield,,Yorkshire and the Humber
+Leicester,City of Leicester,East Midlands
+Nottingham,City of Nottingham,East Midlands
+Lincoln,Lincolnshire,East Midlands
+Tyddewi,Sir Benfro - Pembrokeshire,Wales
+Hereford,County of Herefordshire,West Midlands
+Gloucester,Gloucestershire,South West
+Worcester,Worcestershire,West Midlands
+Wolverhampton,,West Midlands
+Birmingham,,West Midlands
+Coventry,,West Midlands
+Oxford,Oxfordshire,South East
+Abertawe,Abertawe - Swansea,Wales
+Caerdydd,Caerdydd - Cardiff,Wales
+Casnewydd,Casnewydd - Newport,Wales
+Wells,Somerset,South West
+Bristol,City of Bristol,South West
+Bath,Bath and North East Somerset,South West
+Salisbury,Wiltshire,South West
+Southampton,City of Southampton,South East
+Winchester,Hampshire,South East
+Portsmouth,City of Portsmouth,South East
+Chichester,West Sussex,South East
+Truro,Cornwall,South West
+Plymouth,City of Plymouth,South West
+Exeter,Devon,South West
+Kingston upon Hull,City of Kingston upon Hull,Yorkshire and the Humber
+Norwich,Norfolk,Eastern
+St Albans,Hertfordshire,Eastern
+Peterborough,City of Peterborough,Eastern
+Cambridge,Cambridgeshire,Eastern
+Ely,Cambridgeshire,Eastern
+Chelmsford,Essex,Eastern
+Brighton and Hove,The City of Brighton and Hove,South East
+City of Westminster,Greater London,London
+City of London,Greater London,London
+London,Greater London,London
+Canterbury,Kent,South East
