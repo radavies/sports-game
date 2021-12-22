@@ -1,6 +1,7 @@
 import unittest
 from game.game import Game
 
+
 class GameTest(unittest.TestCase):
 
     def test_beep(self):
