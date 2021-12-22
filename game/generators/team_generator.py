@@ -1,5 +1,6 @@
 import random
 from utils import get_name_data_from_file
+from game.generators.player_generator import PlayerGenerator
 from game.team import Team
 from game.names import Names
 
@@ -10,6 +11,7 @@ class TeamGenerator:
         self.generated_teams = []
         self.places = places
         self.names = Names(get_name_data_from_file())
+        self.player_generator = PlayerGenerator()
 
     def generate_teams_for_league(self, league):
         probabilities = {
@@ -96,7 +98,7 @@ class TeamGenerator:
         return place_to_use
 
     def generate_team(self, place):
-        return Team(self.generate_team_name(place), place)
+        return Team(self.generate_team_name(place), place, self.player_generator.generate_initial_squad_for_team())
 
     def generate_team_name(self, place):
         return self.names.generate_name(place["Name"], True)

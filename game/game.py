@@ -26,5 +26,8 @@ class Game:
                     print(team.name)
                 print("")
 
+            for player in self.leagues["Scotland"][0].teams[0].players:
+                print(player.name_first + " " + player.name_last)
+
     def start_game(self):
         print("go")
