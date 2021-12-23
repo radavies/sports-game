@@ -1,4 +1,5 @@
 from game.enums.stats_player import StatsPlayer
+from game.enums.positions import Positions
 
 
 class PlayerStats:
@@ -106,3 +107,42 @@ class PlayerStats:
                 StatsPlayer.Jumping: {}
             }
         }
+
+    def get_overall_score(self, position):
+        if position is Positions.GK:
+            return self.get_overall_score_gk()
+        else:
+            return self.get_overall_score_outfield()
+
+    def get_overall_score_outfield(self):
+        total = 0
+        for stat_group in self.base_stats:
+            if stat_group is not StatsPlayer.GroupGK:
+                total += self.get_score_for_stat_group(stat_group)
+
+            return total
+
+    def get_overall_score_gk(self):
+        total = 0
+        for stat_group in self.base_stats:
+            if stat_group is StatsPlayer.GroupGK:
+                total += self.get_score_for_stat_group(stat_group)
+
+        return total
+
+    def get_score_for_stat_group(self, stat_group):
+        number_of_stats = 0
+        total = 0
+        for stat in self.base_stats[stat_group]:
+            stat_score = self.base_stats[stat_group][stat]
+            number_of_stats += 1
+            modifier_score = 0
+            for modifier in self.stat_modifiers[stat_group][stat]:
+                modifier_score += self.stat_modifiers[stat_group][stat][modifier]
+
+            stat_score += modifier_score
+            if stat_score <= 0:
+                stat_score = 1
+            total += stat_score
+
+        return round(total / number_of_stats)

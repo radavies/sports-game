@@ -1,5 +1,6 @@
 import random
 
+
 class Names:
 
     def __init__(self, name_input):

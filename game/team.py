@@ -4,3 +4,7 @@ class Team:
         self.name = name
         self.place = place
         self.players = squad
+
+    def __str__(self):
+        return self.name
+

@@ -11,5 +11,8 @@ class Player:
         # journey man (low / middling stats, high age)
         # legend (high stats / low age) - maybe not legend, that could be based on accomplishments?
 
+    def overall_stat_total(self):
+        return self.stats.get_overall_score(self.position)
+
     def __str__(self):
         return "{} {}".format(self.name_first, self.name_last)

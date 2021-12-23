@@ -4,7 +4,18 @@ from game.player import Player
 from game.player_stats import PlayerStats
 from game.enums.stats_player import StatsPlayer
 
+
 class PlayerGenerator:
+
+    def __init__(self):
+        self.stat_range_low_off_stat = 10
+        self.stat_range_high_off_stat = 30
+
+        self.stat_range_low_mid_stat = 40
+        self.stat_range_high_mid_stat = 75
+
+        self.stat_range_low_good_stat = 45
+        self.stat_range_high_good_stat = 100
 
     def generate_initial_squad_for_team(self, league_rank):
         players = []
@@ -56,7 +67,7 @@ class PlayerGenerator:
     def generate_random_stats(self, position, league_rank):
         age = random.randint(16, 30)
 
-        if position.GK:
+        if position is Positions.GK:
             return self.generate_random_gk_stats(age, league_rank)
         else:
             return self.generate_random_outfield_stats(age, position, league_rank)
@@ -71,7 +82,11 @@ class PlayerGenerator:
             league_modifier_percent = random.randint(2, 15)
 
         for stat in new_player_stats.base_stats[StatsPlayer.GroupGK]:
-            stat_score = self.remove_modifier_percentage_from_stat(random.randint(40, 100), league_modifier_percent)
+            stat_score = self.remove_modifier_percentage_from_stat(random.randint(
+                self.stat_range_low_good_stat,
+                self.stat_range_high_good_stat),
+                league_modifier_percent
+            )
             new_player_stats.base_stats[StatsPlayer.GroupGK][stat] = stat_score
 
         # Other stats should have lower base range
@@ -81,8 +96,11 @@ class PlayerGenerator:
 
             for stat in new_player_stats.base_stats[stat_group]:
                 # TODO - There are some stats in here like jumping and reactions the GK should get better base for
-                stat_score = self.remove_modifier_percentage_from_stat(random.randint(10, 40), league_modifier_percent)
-                new_player_stats.base_stats[StatsPlayer.GroupGK][stat] = stat_score
+                stat_score = self.remove_modifier_percentage_from_stat(
+                    random.randint(self.stat_range_low_off_stat, self.stat_range_high_off_stat),
+                    league_modifier_percent
+                )
+                new_player_stats.base_stats[stat_group][stat] = stat_score
 
         self.generate_initial_modifiers(new_player_stats)
         return new_player_stats
@@ -97,33 +115,34 @@ class PlayerGenerator:
             league_modifier_percent = random.randint(2, 15)
 
         # Each position gets a main stat and one random other one
+        # Midfield gets two random
         main_stat_group = StatsPlayer.GroupShooting
         second_stat_group = None
-        second_stat_group_options = [
-            StatsPlayer.GroupShooting, StatsPlayer.GroupDefence, StatsPlayer.GroupMental,
-            StatsPlayer.GroupPassing, StatsPlayer.GroupPhysical, StatsPlayer.GroupBallSkills
-        ]
-
         if position is Positions.Forward:
-
+            second_stat_group = self.pick_random_stat(main_stat_group)
         if position is Positions.Defender:
             main_stat_group = StatsPlayer.GroupDefence
+            second_stat_group = self.pick_random_stat(main_stat_group)
         elif position is Positions.Midfielder:
-            
+            main_stat_group = self.pick_random_stat(None)
+            second_stat_group = self.pick_random_stat(main_stat_group)
 
-        for stat in new_player_stats.base_stats[StatsPlayer.GroupGK]:
-            stat_score = self.remove_modifier_percentage_from_stat(random.randint(40, 100), league_modifier_percent)
-            new_player_stats.base_stats[StatsPlayer.GroupGK][stat] = stat_score
-
-        # Other stats should have lower base range
         for stat_group in new_player_stats.base_stats:
-            if stat_group is StatsPlayer.GroupGK:
-                continue
+            stat_range_low = self.stat_range_low_mid_stat
+            stat_range_high = self.stat_range_high_mid_stat
+            if stat_group is main_stat_group or stat_group is second_stat_group:
+                stat_range_low = self.stat_range_low_good_stat
+                stat_range_high = self.stat_range_high_good_stat
+            elif stat_group is StatsPlayer.GroupGK:
+                stat_range_low = 1
+                stat_range_high = 10
 
             for stat in new_player_stats.base_stats[stat_group]:
-                # TODO - There are some stats in here like jumping and reactions the GK should get better base for
-                stat_score = self.remove_modifier_percentage_from_stat(random.randint(10, 40), league_modifier_percent)
-                new_player_stats.base_stats[StatsPlayer.GroupGK][stat] = stat_score
+                stat_score = self.remove_modifier_percentage_from_stat(
+                    random.randint(stat_range_low, stat_range_high),
+                    league_modifier_percent
+                )
+                new_player_stats.base_stats[stat_group][stat] = stat_score
 
         self.generate_initial_modifiers(new_player_stats)
         return new_player_stats
@@ -131,7 +150,9 @@ class PlayerGenerator:
     def generate_initial_modifiers(self, new_player_stats):
         for stat_group in new_player_stats.stat_modifiers:
             for stat in new_player_stats.stat_modifiers[stat_group]:
-                stat[StatsPlayer.ModifierAge] = self.get_age_modifier(new_player_stats.age)
+                new_player_stats.stat_modifiers[stat_group][stat][StatsPlayer.ModifierAge] = self.get_age_modifier(
+                    new_player_stats.age
+                )
 
     @staticmethod
     def remove_modifier_percentage_from_stat(stat, percentage):
@@ -153,3 +174,14 @@ class PlayerGenerator:
         else:
             return -2
 
+    @staticmethod
+    def pick_random_stat(dont_match):
+        second_stat_group_options = [
+            StatsPlayer.GroupShooting, StatsPlayer.GroupDefence, StatsPlayer.GroupMental,
+            StatsPlayer.GroupPassing, StatsPlayer.GroupPhysical, StatsPlayer.GroupBallSkills
+        ]
+        random_stat = dont_match
+        while random_stat is dont_match:
+            stat_choice = random.randint(0, len(second_stat_group_options) - 1)
+            random_stat = second_stat_group_options[stat_choice]
+        return random_stat

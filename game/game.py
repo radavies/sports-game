@@ -12,22 +12,42 @@ class Game:
         self.leagues = league_gen.create_leagues(self.places)
 
         if self.debug:
-            for league in self.leagues["Scotland"]:
-                print(league.name)
-                print("")
-                for team in league.teams:
-                    print(team.name)
-                print("")
+            self.print_debug()
 
-            for league in self.leagues["England & Wales"]:
-                print(league.name)
-                print("")
-                for team in league.teams:
-                    print(team.name)
-                print("")
+    def print_debug(self):
 
-            for player in self.leagues["Scotland"][0].teams[0].players:
-                print(player.name_first + " " + player.name_last)
+        for league in self.leagues["Scotland"]:
+            league_stat_avg = 0
+            print(league.name)
+            print("")
+            for team in league.teams:
+                print(team.name)
+                league_stat_avg += self.get_team_average_stat(team)
+            print("")
+            print(round(league_stat_avg / len(league.teams)))
+            print("")
+
+        for league in self.leagues["England & Wales"]:
+            league_stat_avg = 0
+            print(league.name)
+            print("")
+            for team in league.teams:
+                print(team.name)
+                league_stat_avg += self.get_team_average_stat(team)
+            print("")
+            print(round(league_stat_avg / len(league.teams)))
+            print("")
+
+        for player in self.leagues["Scotland"][0].teams[0].players:
+            print("{} - {} ({})".format(player, player.position.value, player.overall_stat_total()))
+
+    @staticmethod
+    def get_team_average_stat(team):
+        total = 0
+        for player in team.players:
+            total += player.overall_stat_total()
+        return round(total / len(team.players))
+
 
     def start_game(self):
         print("go")

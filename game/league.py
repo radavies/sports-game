@@ -9,3 +9,6 @@ class League:
         self.total_teams = total_teams
         self.sponsor = sponsor
         self.teams = []
+
+    def __str__(self):
+        return self.name if self.sponsor is None else self.name_sponsor_format.format(self.sponsor.name)
