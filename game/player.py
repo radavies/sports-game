@@ -4,7 +4,7 @@ class Player:
         self.name_first = name_first
         self.name_last = name_last
         self.position = position
-        self.stats
+        self.stats = stats
 
         # TODO - age bonus to stats
         # Wonder kid

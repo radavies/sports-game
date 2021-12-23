@@ -48,3 +48,5 @@ class StatsPlayer(Enum):
     Speed = "Speed"
     Agility = "Agility"
     Jumping = "Jumping"
+
+    ModifierAge = "Age"
