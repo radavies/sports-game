@@ -14,7 +14,7 @@ class StartWindow(QWidget):
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.setLayout(layout)
 
-        title_label = QLabel(Misc.GameNameWithEmoji.value)
+        title_label = QLabel(Misc.GameNameWithEmoji.value, objectName="headingLbl")
         new_game_button = QPushButton("New Game")
         new_game_button.clicked.connect(new_game_function)
         load_game_button = QPushButton("Load Game")

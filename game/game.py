@@ -38,7 +38,6 @@ class Game:
         app.setStyleSheet(open(css_file).read())
 
         self.loading_window = LoadingWindow()
-        self.select_team_window = SelectTeamWindow()
 
         self.start_window = StartWindow(self.new_game_button_event)
         self.start_window.show()
@@ -71,6 +70,8 @@ class Game:
 
     def after_game_set_up(self):
         self.loading_window.close()
+
+        self.select_team_window = SelectTeamWindow(self.leagues)
         self.select_team_window.show()
 
     def print_debug(self):
@@ -79,9 +80,7 @@ class Game:
             print(league.name)
             print("")
             for team in league.teams:
-                print(team.name)
                 league_stat_avg += self.get_team_average_stat(team)
-            print("")
             print(round(league_stat_avg / len(league.teams)))
             print("")
 
@@ -90,9 +89,7 @@ class Game:
             print(league.name)
             print("")
             for team in league.teams:
-                print(team.name)
                 league_stat_avg += self.get_team_average_stat(team)
-            print("")
             print(round(league_stat_avg / len(league.teams)))
             print("")
 

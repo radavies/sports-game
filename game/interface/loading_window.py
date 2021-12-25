@@ -14,7 +14,7 @@ class LoadingWindow(QWidget):
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.setLayout(layout)
 
-        title_label = QLabel("Loading")
+        title_label = QLabel("Loading...", objectName="headingLbl")
 
         self.progress = QProgressBar()
         self.progress.setMinimum(0)
