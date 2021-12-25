@@ -2,7 +2,8 @@
 Silly Sports Sim Game
 
 ### ToDo
-* Give players stats when they're generated
+* Work out what the rest of the UI needs to be
+* Start the actual sim
 
 ### Ideas
 

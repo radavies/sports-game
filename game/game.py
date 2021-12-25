@@ -16,6 +16,7 @@ class Game:
         self.debug = debug
         self.places = None
         self.leagues = None
+        self.selected_team = None
 
         # UI Windows
         self.start_window = None
@@ -66,39 +67,13 @@ class Game:
 
     def update_leagues(self, leagues_in):
         self.leagues = leagues_in
-        self.print_debug()
 
     def after_game_set_up(self):
         self.loading_window.close()
 
-        self.select_team_window = SelectTeamWindow(self.leagues)
+        self.select_team_window = SelectTeamWindow(self.leagues, self.team_selected)
         self.select_team_window.show()
 
-    def print_debug(self):
-        for league in self.leagues.leagues["Scotland"]:
-            league_stat_avg = 0
-            print(league.name)
-            print("")
-            for team in league.teams:
-                league_stat_avg += self.get_team_average_stat(team)
-            print(round(league_stat_avg / len(league.teams)))
-            print("")
-
-        for league in self.leagues.leagues["England & Wales"]:
-            league_stat_avg = 0
-            print(league.name)
-            print("")
-            for team in league.teams:
-                league_stat_avg += self.get_team_average_stat(team)
-            print(round(league_stat_avg / len(league.teams)))
-            print("")
-
-        for player in self.leagues.leagues["Scotland"][0].teams[0].players:
-            print("{} - {} ({})".format(player, player.position.value, player.overall_stat_total()))
-
-    @staticmethod
-    def get_team_average_stat(team):
-        total = 0
-        for player in team.players:
-            total += player.overall_stat_total()
-        return round(total / len(team.players))
+    def team_selected(self, team_name):
+        self.selected_team = team_name
+        self.select_team_window.close()
