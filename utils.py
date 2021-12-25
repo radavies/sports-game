@@ -1,9 +1,10 @@
 import csv
 from pathlib import Path
+from game.enums.misc import Misc
 
 
 def get_name_data_from_file():
-    folder = Path("data/names")
+    folder = Path(Misc.NamesFolderPath.value)
     animals_file = folder / "animals.txt"
     things_file = folder / "things.txt"
     prename_file = folder / "pre_name.txt"
@@ -33,7 +34,7 @@ def get_name_data_from_file():
 
 
 def get_place_data_from_file():
-    folder = Path("data/places")
+    folder = Path(Misc.PlaceFolderPath.value)
     place_data = {
         "Cities": [],
         "Towns": [],
@@ -77,8 +78,8 @@ def get_place_data_from_file():
 
 
 def __create_place_data_from_os_csv():
-    folder = Path("raw_data")
-    out_folder = Path("data")
+    folder = Path(Misc.RawDataFolderPath.value)
+    out_folder = Path(Misc.DataFolderPath.value)
     iterator = folder.glob("*.csv")
 
     errors = []
