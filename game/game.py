@@ -3,10 +3,7 @@ from PyQt6 import QtCore
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtGui import QIcon
 from pathlib import Path
-from utils import get_place_data_from_file
 from game.enums.misc import Misc
-from game.generators.league_generator import LeagueGenerator
-from game.places import Places
 from game.interface.start_window import StartWindow
 from game.interface.loading_window import LoadingWindow
 from game.interface.select_team_window import SelectTeamWindow
@@ -25,6 +22,7 @@ class Game:
         self.loading_window = None
         self.select_team_window = None
 
+        # Threads & Worker Tasks
         self.game_set_up_thread = None
         self.new_game_task = None
 
@@ -52,30 +50,31 @@ class Game:
         self.loading_window.show()
 
         self.game_set_up_thread = QtCore.QThread()
-        self.new_game_task = InitialiseNewGameTask(self.places, self.leagues)
+        self.new_game_task = InitialiseNewGameTask()
         self.new_game_task.moveToThread(self.game_set_up_thread)
 
         self.game_set_up_thread.started.connect(self.new_game_task.run)
         self.new_game_task.finished.connect(self.game_set_up_thread.quit)
-
         self.game_set_up_thread.finished.connect(self.after_game_set_up)
 
+        self.new_game_task.places_signal.connect(self.update_places)
+        self.new_game_task.league_signal.connect(self.update_leagues)
+
         self.game_set_up_thread.start()
+
+    def update_places(self, places_in):
+        self.places = places_in
+
+    def update_leagues(self, leagues_in):
+        self.leagues = leagues_in
+        self.print_debug()
 
     def after_game_set_up(self):
         self.loading_window.close()
         self.select_team_window.show()
 
-    # def initialise_new_game(self):
-    #     self.places = Places(get_place_data_from_file())
-    #     league_gen = LeagueGenerator()
-    #     self.leagues = league_gen.create_leagues(self.places)
-    #
-    #     if self.debug:
-    #         self.print_debug()
-
     def print_debug(self):
-        for league in self.leagues["Scotland"]:
+        for league in self.leagues.leagues["Scotland"]:
             league_stat_avg = 0
             print(league.name)
             print("")
@@ -86,7 +85,7 @@ class Game:
             print(round(league_stat_avg / len(league.teams)))
             print("")
 
-        for league in self.leagues["England & Wales"]:
+        for league in self.leagues.leagues["England & Wales"]:
             league_stat_avg = 0
             print(league.name)
             print("")
@@ -97,7 +96,7 @@ class Game:
             print(round(league_stat_avg / len(league.teams)))
             print("")
 
-        for player in self.leagues["Scotland"][0].teams[0].players:
+        for player in self.leagues.leagues["Scotland"][0].teams[0].players:
             print("{} - {} ({})".format(player, player.position.value, player.overall_stat_total()))
 
     @staticmethod
