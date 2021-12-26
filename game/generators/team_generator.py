@@ -44,22 +44,26 @@ class TeamGenerator:
             if type_choice <= probabilities["Cities"]:
                 league.teams.append(self.generate_team(
                     self.select_place(league.country, "Cities", True),
-                    league.league_rank
+                    league.league_rank,
+                    league.name
                 ))
             elif type_choice <= probabilities["Towns or Suburban Areas"]:
                 league.teams.append(self.generate_team(
                     self.select_place(league.country, "Towns or Suburban Areas", True),
-                    league.league_rank
+                    league.league_rank,
+                    league.name
                 ))
             elif type_choice <= probabilities["Villages"]:
                 league.teams.append(self.generate_team(
                     self.select_place(league.country, "Villages", True),
-                    league.league_rank
+                    league.league_rank,
+                    league.name
                 ))
             else:
                 league.teams.append(self.generate_team(
                     self.select_place(league.country, "Education", False),
-                    league.league_rank
+                    league.league_rank,
+                    league.name
                 ))
 
     def select_place(self, country, place_type, search_down):
@@ -101,11 +105,12 @@ class TeamGenerator:
         place_to_use["Has Team"] = True
         return place_to_use
 
-    def generate_team(self, place, league_rank):
+    def generate_team(self, place, league_rank, league_name):
         return Team(
             self.generate_team_name(place),
             place,
-            self.player_generator.generate_initial_squad_for_team(league_rank)
+            self.player_generator.generate_initial_squad_for_team(league_rank),
+            league_name
         )
 
     def generate_team_name(self, place):

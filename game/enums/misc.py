@@ -10,3 +10,4 @@ class Misc(Enum):
     PlaceFolderPath = "data/places"
     IconFileName = "ball.png"
     CSSFileName = "app.css"
+    IntroFileName = "intro.txt"

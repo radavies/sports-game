@@ -8,6 +8,7 @@ from game.interface.start_window import StartWindow
 from game.interface.loading_window import LoadingWindow
 from game.interface.select_team_window import SelectTeamWindow
 from game.interface.initialise_new_game_task import InitialiseNewGameTask
+from game.interface.intro_window import IntroWindow
 
 
 class Game:
@@ -22,6 +23,7 @@ class Game:
         self.start_window = None
         self.loading_window = None
         self.select_team_window = None
+        self.intro_window = None
 
         # Threads & Worker Tasks
         self.game_set_up_thread = None
@@ -77,3 +79,9 @@ class Game:
     def team_selected(self, team_name):
         self.selected_team = team_name
         self.select_team_window.close()
+        team = self.leagues.find_team(team_name)
+        self.intro_window = IntroWindow(team.name, team.current_league_name, self.intro_continue)
+        self.intro_window.show()
+
+    def intro_continue(self):
+        print("done")
