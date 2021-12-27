@@ -38,8 +38,9 @@ class Game:
         icon_file = folder / Misc.IconFileName.value
         app.setWindowIcon(QIcon(str(icon_file)))
 
-        app_id = "sports-game"
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(app_id)
+        if hasattr(ctypes, 'windll'):
+            app_id = "sports-game"
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(app_id)
 
         css_file = folder / Misc.CSSFileName.value
         app.setStyleSheet(open(css_file).read())

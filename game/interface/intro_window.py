@@ -25,9 +25,4 @@ class IntroWindow(QWidget):
         continue_button = QPushButton("Continue")
         continue_button.clicked.connect(continue_function)
 
-        #sub_layout = QVBoxLayout()
-        #sub_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
-
         layout.addWidget(continue_button)
-        #sub_layout.addWidget(continue_button)
-        #layout.addLayout(sub_layout)
