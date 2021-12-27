@@ -17,7 +17,7 @@ class IntroWindow(QWidget):
 
         folder = Path(Misc.DataFolderPath.value)
         intro_file = folder / Misc.IntroFileName.value
-        text_label = QLabel(open(intro_file).read().format(team_name, league_name))
+        text_label = QLabel(open(intro_file, encoding="utf8").read().format(team_name, league_name))
         text_label.setAlignment(Qt.AlignmentFlag.AlignLeft)
 
         layout.addWidget(text_label)

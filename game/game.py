@@ -1,4 +1,5 @@
 import sys
+import ctypes
 from PyQt6 import QtCore
 from PyQt6.QtWidgets import QApplication
 from PyQt6.QtGui import QIcon
@@ -36,6 +37,9 @@ class Game:
         folder = Path(Misc.DataFolderPath.value)
         icon_file = folder / Misc.IconFileName.value
         app.setWindowIcon(QIcon(str(icon_file)))
+
+        app_id = "sports-game"
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(app_id)
 
         css_file = folder / Misc.CSSFileName.value
         app.setStyleSheet(open(css_file).read())
