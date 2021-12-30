@@ -9,8 +9,6 @@ class IntroWindow(QWidget):
         super().__init__()
         self.setWindowTitle("Introduction")
 
-        self.resize(500, 350)
-
         layout = QVBoxLayout()
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.setLayout(layout)
@@ -26,3 +24,5 @@ class IntroWindow(QWidget):
         continue_button.clicked.connect(continue_function)
 
         layout.addWidget(continue_button)
+
+        self.setFixedSize(1124, 419)

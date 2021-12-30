@@ -19,7 +19,7 @@ Silly Sports Sim Game
   * Club overview (finances, upgrades etc)
   * Calendar (upcoming events)
   * League table
-  * "Inbox"
+  * "Inbox" / social media
   * Advance time 
 
 * Save / Load
@@ -38,3 +38,9 @@ Silly Sports Sim Game
 * Injuries / sickness
 * Team modifiers - fired up, on a run, on a bad run etc
 * Should the game run on a proper calendar? (if so need to refactor the ages to be DoBs)
+
+### Doc Links
+
+* https://doc.qt.io/qt.html
+* https://doc.qt.io/qtforpython-6/api.html
+* https://www.riverbankcomputing.com/static/Docs/PyQt6/

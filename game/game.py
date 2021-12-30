@@ -10,6 +10,7 @@ from game.interface.loading_window import LoadingWindow
 from game.interface.select_team_window import SelectTeamWindow
 from game.interface.initialise_new_game_task import InitialiseNewGameTask
 from game.interface.intro_window import IntroWindow
+from game.interface.main_window import MainWindow
 
 
 class Game:
@@ -25,6 +26,7 @@ class Game:
         self.loading_window = None
         self.select_team_window = None
         self.intro_window = None
+        self.main_window = None
 
         # Threads & Worker Tasks
         self.game_set_up_thread = None
@@ -45,15 +47,17 @@ class Game:
         css_file = folder / Misc.CSSFileName.value
         app.setStyleSheet(open(css_file).read())
 
-        self.loading_window = LoadingWindow()
-
-        self.start_window = StartWindow(self.new_game_button_event)
-        self.start_window.show()
+        if not self.debug:
+            self.start_window = StartWindow(self.new_game_button_event)
+            self.start_window.show()
+        else:
+            self.debug_jumper()
 
         sys.exit(app.exec())
 
     def new_game_button_event(self):
         self.start_window.close()
+        self.loading_window = LoadingWindow()
         self.loading_window.show()
 
         self.game_set_up_thread = QtCore.QThread()
@@ -77,7 +81,6 @@ class Game:
 
     def after_game_set_up(self):
         self.loading_window.close()
-
         self.select_team_window = SelectTeamWindow(self.leagues, self.team_selected)
         self.select_team_window.show()
 
@@ -89,4 +92,9 @@ class Game:
         self.intro_window.show()
 
     def intro_continue(self):
-        print("done")
+        self.main_window = MainWindow()
+        self.main_window.showMaximized()
+
+    def debug_jumper(self):
+        # DEBUG METHOD TO JUMP TO SPECIFIC POINTS
+        self.intro_continue()

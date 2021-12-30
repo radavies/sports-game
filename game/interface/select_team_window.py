@@ -12,7 +12,7 @@ class SelectTeamWindow(QWidget):
 
         self.setWindowTitle("{} - {}".format(Misc.GameName.value, "Choose Team"))
 
-        self.resize(1500, 850)
+        self.setFixedSize(1500, 850)
 
         layout = QVBoxLayout()
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)

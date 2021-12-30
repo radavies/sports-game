@@ -8,7 +8,7 @@ class LoadingWindow(QWidget):
         super().__init__()
         self.setWindowTitle("{} - {}".format(Misc.GameName.value, "Loading"))
 
-        self.resize(500, 350)
+        self.setFixedSize(500, 350)
 
         layout = QVBoxLayout()
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)

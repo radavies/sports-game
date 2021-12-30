@@ -8,7 +8,7 @@ class StartWindow(QWidget):
         super().__init__()
         self.setWindowTitle(Misc.GameName.value)
 
-        self.resize(500, 350)
+        self.setFixedSize(500, 350)
 
         layout = QVBoxLayout()
         layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
