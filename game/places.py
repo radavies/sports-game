@@ -20,9 +20,9 @@ class Places:
             }
         }
 
-        self.populate_place_object()
+        self._populate_place_object()
 
-    def populate_place_object(self):
+    def _populate_place_object(self):
 
         added_names_scotland = {}
         added_names_england_and_wales = {}

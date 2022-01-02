@@ -12,6 +12,6 @@ QListWidget {
     font-size: 15px;
 }
 
- QLabel#headingLbl {
-     font-size: 25px;
- }
+QLabel#headingLbl {
+ font-size: 25px;
+}

@@ -16,10 +16,15 @@ from game.interface.main_window import MainWindow
 class Game:
 
     def __init__(self, debug):
+
+        # Main Game Objects
         self.debug = debug
         self.places = None
         self.leagues = None
-        self.selected_team = None
+
+        # Player Selected Game Objects
+        self.current_selected_team = None
+        self.current_teams_league = None
 
         # UI Windows
         self.start_window = None
@@ -85,14 +90,22 @@ class Game:
         self.select_team_window.show()
 
     def team_selected(self, team_name):
-        self.selected_team = team_name
+        returned = self.leagues.find_team_and_league(team_name)
+        self.current_selected_team = returned["team"]
+        self.current_teams_league = returned["league"]
+
         self.select_team_window.close()
-        team = self.leagues.find_team(team_name)
-        self.intro_window = IntroWindow(team.name, team.current_league_name, self.intro_continue)
+
+        self.intro_window = IntroWindow(
+            self.current_selected_team.name,
+            self.current_selected_team.current_league_name,
+            self.intro_continue)
+
         self.intro_window.show()
 
     def intro_continue(self):
-        self.main_window = MainWindow()
+        self.intro_window.close()
+        self.main_window = MainWindow(self.current_teams_league)
         self.main_window.showMaximized()
 
     def debug_jumper(self):

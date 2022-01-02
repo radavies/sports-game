@@ -10,12 +10,12 @@ class Names:
             "Pre-Names": []
         }
 
-        self.populate_name_elements(name_input)
+        self._populate_name_elements(name_input)
 
         self.animal_prob = 70
         self.alliteration_prob = 60
 
-    def populate_name_elements(self, name_input):
+    def _populate_name_elements(self, name_input):
         for animal in name_input["Animals"]:
             self.name_elements["Animals"].append(
                 {"Singular": animal[0], "Plural": animal[1], "Used": False}
@@ -39,7 +39,7 @@ class Names:
         alliteration = allow_alliteration and random.randint(1, 100) <= self.alliteration_prob
 
         if alliteration:
-            return self.generate_alliterative_name(place_name, available_animals, available_things, available_prenames)
+            return self._generate_alliterative_name(place_name, available_animals, available_things, available_prenames)
 
         parts = random.randint(1, 2)
         animal = random.randint(1, 100) <= self.animal_prob
@@ -65,7 +65,7 @@ class Names:
 
         return final_name
 
-    def generate_alliterative_name(self, place_name, available_animals, available_things, available_prenames):
+    def _generate_alliterative_name(self, place_name, available_animals, available_things, available_prenames):
         alliterate_with = place_name[0]
         alliterate_animals = [option for option in available_animals if option["Singular"].startswith(alliterate_with)]
         alliterate_things = [option for option in available_things if option["Singular"].startswith(alliterate_with)]

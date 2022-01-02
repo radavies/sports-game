@@ -13,7 +13,7 @@ class PlayerStats:
                 StatsPlayer.BallControl: 0,
                 StatsPlayer.Dribbling: 0
             },
-            StatsPlayer.GroupShooting:{
+            StatsPlayer.GroupShooting: {
                 StatsPlayer.Heading: 0,
                 StatsPlayer.ShotPower: 0,
                 StatsPlayer.Finishing: 0,
@@ -110,27 +110,27 @@ class PlayerStats:
 
     def get_overall_score(self, position):
         if position is Positions.GK:
-            return self.get_overall_score_gk()
+            return self._get_overall_score_gk()
         else:
-            return self.get_overall_score_outfield()
+            return self._get_overall_score_outfield()
 
-    def get_overall_score_outfield(self):
+    def _get_overall_score_outfield(self):
         total = 0
         for stat_group in self.base_stats:
             if stat_group is not StatsPlayer.GroupGK:
-                total += self.get_score_for_stat_group(stat_group)
+                total += self._get_score_for_stat_group(stat_group)
 
             return total
 
-    def get_overall_score_gk(self):
+    def _get_overall_score_gk(self):
         total = 0
         for stat_group in self.base_stats:
             if stat_group is StatsPlayer.GroupGK:
-                total += self.get_score_for_stat_group(stat_group)
+                total += self._get_score_for_stat_group(stat_group)
 
         return total
 
-    def get_score_for_stat_group(self, stat_group):
+    def _get_score_for_stat_group(self, stat_group):
         number_of_stats = 0
         total = 0
         for stat in self.base_stats[stat_group]:
