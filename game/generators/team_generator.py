@@ -42,31 +42,31 @@ class TeamGenerator:
         for counter in range(0, league.total_teams):
             type_choice = random.randint(1, 100)
             if type_choice <= probabilities["Cities"]:
-                league.teams.append(self.generate_team(
-                    self.select_place(league.country, "Cities", True),
+                league.teams.append(self._generate_team(
+                    self._select_place(league.country, "Cities", True),
                     league.league_rank,
                     league.name
                 ))
             elif type_choice <= probabilities["Towns or Suburban Areas"]:
-                league.teams.append(self.generate_team(
-                    self.select_place(league.country, "Towns or Suburban Areas", True),
+                league.teams.append(self._generate_team(
+                    self._select_place(league.country, "Towns or Suburban Areas", True),
                     league.league_rank,
                     league.name
                 ))
             elif type_choice <= probabilities["Villages"]:
-                league.teams.append(self.generate_team(
-                    self.select_place(league.country, "Villages", True),
+                league.teams.append(self._generate_team(
+                    self._select_place(league.country, "Villages", True),
                     league.league_rank,
                     league.name
                 ))
             else:
-                league.teams.append(self.generate_team(
-                    self.select_place(league.country, "Education", False),
+                league.teams.append(self._generate_team(
+                    self._select_place(league.country, "Education", False),
                     league.league_rank,
                     league.name
                 ))
 
-    def select_place(self, country, place_type, search_down):
+    def _select_place(self, country, place_type, search_down):
         open_options = []
         if place_type != "Towns or Suburban Areas":
             open_options.extend(
@@ -83,35 +83,35 @@ class TeamGenerator:
         if len(open_options) == 0:
             if search_down:
                 if place_type == "Cities":
-                    return self.select_place(country, "Towns or Suburban Areas", search_down)
+                    return self._select_place(country, "Towns or Suburban Areas", search_down)
                 elif place_type == "Towns or Suburban Areas":
-                    return self.select_place(country, "Villages", search_down)
+                    return self._select_place(country, "Villages", search_down)
                 elif place_type == "Villages":
-                    return self.select_place(country, "Education", search_down)
+                    return self._select_place(country, "Education", search_down)
                 else:
-                    return self.select_place(country, "Cities", not search_down)
+                    return self._select_place(country, "Cities", not search_down)
             else:
                 if place_type == "Cities":
-                    return self.select_place(country, "Education", not search_down)
+                    return self._select_place(country, "Education", not search_down)
                 elif place_type == "Towns or Suburban Areas":
-                    return self.select_place(country, "Cities", search_down)
+                    return self._select_place(country, "Cities", search_down)
                 elif place_type == "Villages":
-                    return self.select_place(country, "Towns or Suburban Areas", search_down)
+                    return self._select_place(country, "Towns or Suburban Areas", search_down)
                 else:
-                    return self.select_place(country, "Villages", search_down)
+                    return self._select_place(country, "Villages", search_down)
 
         choice = random.randint(0, len(open_options) - 1)
         place_to_use = open_options[choice]
         place_to_use["Has Team"] = True
         return place_to_use
 
-    def generate_team(self, place, league_rank, league_name):
+    def _generate_team(self, place, league_rank, league_name):
         return Team(
-            self.generate_team_name(place),
+            self._generate_team_name(place),
             place,
             self.player_generator.generate_initial_squad_for_team(league_rank),
             league_name
         )
 
-    def generate_team_name(self, place):
+    def _generate_team_name(self, place):
         return self.names.generate_name(place["Name"], True)

@@ -23,23 +23,23 @@ class PlayerGenerator:
 
         # Generate Forwards
         for counter in range(0, 2):
-            players.append(self.generate_player(Positions.Forward, league_rank))
+            players.append(self._generate_player(Positions.Forward, league_rank))
         # Generate Mid
         for counter in range(0, 5):
-            players.append(self.generate_player(Positions.Midfielder, league_rank))
+            players.append(self._generate_player(Positions.Midfielder, league_rank))
         # Generate Def
         for counter in range(0, 5):
-            players.append(self.generate_player(Positions.Defender, league_rank))
+            players.append(self._generate_player(Positions.Defender, league_rank))
         # Generate GKs
         for counter in range(0, 2):
-            players.append(self.generate_player(Positions.GK, league_rank))
+            players.append(self._generate_player(Positions.GK, league_rank))
         # Generate random subs
         for counter in range(0, 3):
-            players.append(self.generate_player(None, league_rank))
+            players.append(self._generate_player(None, league_rank))
 
         return players
 
-    def generate_player(self, position, league_rank):
+    def _generate_player(self, position, league_rank):
         if position is None:
             choice = random.randint(0, 3)
             if choice == 0:
@@ -63,17 +63,17 @@ class PlayerGenerator:
             for counter in range(2, len(name_parts) - 1):
                 name_last += " {}".format(name_parts[counter])
 
-        return Player(name_parts[0], name_last, position, self.generate_random_stats(position, league_rank))
+        return Player(name_parts[0], name_last, position, self._generate_random_stats(position, league_rank))
 
-    def generate_random_stats(self, position, league_rank):
+    def _generate_random_stats(self, position, league_rank):
         age = random.randint(16, 30)
 
         if position is Positions.GK:
-            return self.generate_random_gk_stats(age, league_rank)
+            return self._generate_random_gk_stats(age, league_rank)
         else:
-            return self.generate_random_outfield_stats(age, position, league_rank)
+            return self._generate_random_outfield_stats(age, position, league_rank)
 
-    def generate_random_gk_stats(self, age, league_rank):
+    def _generate_random_gk_stats(self, age, league_rank):
         new_player_stats = PlayerStats(age)
 
         league_modifier_percent = 0
@@ -83,7 +83,7 @@ class PlayerGenerator:
             league_modifier_percent = random.randint(2, 15)
 
         for stat in new_player_stats.base_stats[StatsPlayer.GroupGK]:
-            stat_score = self.remove_modifier_percentage_from_stat(random.randint(
+            stat_score = self._remove_modifier_percentage_from_stat(random.randint(
                 self.stat_range_low_good_stat,
                 self.stat_range_high_good_stat),
                 league_modifier_percent
@@ -97,16 +97,16 @@ class PlayerGenerator:
 
             for stat in new_player_stats.base_stats[stat_group]:
                 # TODO - There are some stats in here like jumping and reactions the GK should get better base for
-                stat_score = self.remove_modifier_percentage_from_stat(
+                stat_score = self._remove_modifier_percentage_from_stat(
                     random.randint(self.stat_range_low_off_stat, self.stat_range_high_off_stat),
                     league_modifier_percent
                 )
                 new_player_stats.base_stats[stat_group][stat] = stat_score
 
-        self.generate_initial_modifiers(new_player_stats)
+        self._generate_initial_modifiers(new_player_stats)
         return new_player_stats
 
-    def generate_random_outfield_stats(self, age, position, league_rank):
+    def _generate_random_outfield_stats(self, age, position, league_rank):
         new_player_stats = PlayerStats(age)
 
         league_modifier_percent = 0
@@ -120,13 +120,13 @@ class PlayerGenerator:
         main_stat_group = StatsPlayer.GroupShooting
         second_stat_group = None
         if position is Positions.Forward:
-            second_stat_group = self.pick_random_stat(main_stat_group)
+            second_stat_group = self._pick_random_stat(main_stat_group)
         if position is Positions.Defender:
             main_stat_group = StatsPlayer.GroupDefence
-            second_stat_group = self.pick_random_stat(main_stat_group)
+            second_stat_group = self._pick_random_stat(main_stat_group)
         elif position is Positions.Midfielder:
-            main_stat_group = self.pick_random_stat(None)
-            second_stat_group = self.pick_random_stat(main_stat_group)
+            main_stat_group = self._pick_random_stat(None)
+            second_stat_group = self._pick_random_stat(main_stat_group)
 
         for stat_group in new_player_stats.base_stats:
             stat_range_low = self.stat_range_low_mid_stat
@@ -139,31 +139,31 @@ class PlayerGenerator:
                 stat_range_high = 10
 
             for stat in new_player_stats.base_stats[stat_group]:
-                stat_score = self.remove_modifier_percentage_from_stat(
+                stat_score = self._remove_modifier_percentage_from_stat(
                     random.randint(stat_range_low, stat_range_high),
                     league_modifier_percent
                 )
                 new_player_stats.base_stats[stat_group][stat] = stat_score
 
-        self.generate_initial_modifiers(new_player_stats)
+        self._generate_initial_modifiers(new_player_stats)
         return new_player_stats
 
-    def generate_initial_modifiers(self, new_player_stats):
+    def _generate_initial_modifiers(self, new_player_stats):
         for stat_group in new_player_stats.stat_modifiers:
             for stat in new_player_stats.stat_modifiers[stat_group]:
-                new_player_stats.stat_modifiers[stat_group][stat][StatsPlayer.ModifierAge] = self.get_age_modifier(
+                new_player_stats.stat_modifiers[stat_group][stat][StatsPlayer.ModifierAge] = self._get_age_modifier(
                     new_player_stats.age
                 )
 
     @staticmethod
-    def remove_modifier_percentage_from_stat(stat, percentage):
+    def _remove_modifier_percentage_from_stat(stat, percentage):
         if percentage == 0:
             return stat
         modified = stat - (stat / 100 * percentage)
         return modified if modified > 0 else 1
 
     @staticmethod
-    def get_age_modifier(age):
+    def _get_age_modifier(age):
         if age <= 21:
             return 4
         elif 22 <= age <= 25:
@@ -176,7 +176,7 @@ class PlayerGenerator:
             return -2
 
     @staticmethod
-    def pick_random_stat(dont_match):
+    def _pick_random_stat(dont_match):
         second_stat_group_options = [
             StatsPlayer.GroupShooting, StatsPlayer.GroupDefence, StatsPlayer.GroupMental,
             StatsPlayer.GroupPassing, StatsPlayer.GroupPhysical, StatsPlayer.GroupBallSkills

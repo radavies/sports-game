@@ -4,3 +4,4 @@ PyQt6-Qt6==6.2.2
 PyQt6-sip==13.2.0
 six==1.15.0
 flake8==4.0.1
+pytest==6.2.5

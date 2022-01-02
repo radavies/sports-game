@@ -40,12 +40,12 @@ class LeagueGenerator:
         leagues["England & Wales"].append(eng_champ)
         leagues["England & Wales"].append(eng_league_one)
 
-        self.create_starting_teams(leagues, places)
+        self._create_starting_teams(leagues, places)
 
         return leagues
 
     @staticmethod
-    def create_starting_teams(leagues, places):
+    def _create_starting_teams(leagues, places):
         team_gen = TeamGenerator(places)
 
         for league in leagues["Scotland"]:
