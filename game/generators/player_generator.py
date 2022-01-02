@@ -1,4 +1,5 @@
-import names, random
+import names
+import random
 from game.enums.positions import Positions
 from game.player import Player
 from game.player_stats import PlayerStats

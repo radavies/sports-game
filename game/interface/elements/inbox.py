@@ -1,5 +1,5 @@
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel
 
 
 class Inbox(QWidget):
@@ -12,4 +12,3 @@ class Inbox(QWidget):
 
         title_label = QLabel("Inbox", objectName="headingLbl")
         layout.addWidget(title_label)
-

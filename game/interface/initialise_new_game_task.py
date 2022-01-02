@@ -23,5 +23,3 @@ class InitialiseNewGameTask(QObject):
         self.league_signal.emit(leagues)
 
         self.finished.emit()
-
-

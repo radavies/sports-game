@@ -1,0 +1,7 @@
+[flake8]
+exclude =
+    .github,
+    __pycache__,
+    data,
+    raw_data,
+    venv

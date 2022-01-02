@@ -1,5 +1,5 @@
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QLabel
+from PyQt6.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout
 from game.interface.elements.side_bar import SideBar
 from game.interface.elements.inbox import Inbox
 from game.interface.elements.club_overview import ClubOverview
@@ -42,5 +42,3 @@ class MainWindow(QWidget):
         layout.addLayout(col_one_layout)
         layout.addLayout(col_two_layout)
         layout.addLayout(col_three_layout)
-
-

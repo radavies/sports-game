@@ -103,9 +103,11 @@ def __create_place_data_from_os_csv():
                             towns.append([row[2], row[24], row[27]])
                         elif row[7] == "Suburban Area":
                             suburban.append([row[2], row[24], row[27]])
-                        elif row[7] == "Higher or University Education" or row[7] == "Further Education,Secondary Education" or row[7] == "Further Education,Higher or University Education":
+                        elif row[7] == "Higher or University Education" \
+                                or row[7] == "Further Education,Secondary Education" \
+                                or row[7] == "Further Education,Higher or University Education":
                             education.append([row[2], row[24], row[27]])
-                except Exception as ex:
+                except Exception:
                     errors.append(item.name)
 
     cities_file = out_folder / "cities.txt"

@@ -1,5 +1,5 @@
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel
 
 
 class LeagueTable(QWidget):
@@ -12,4 +12,3 @@ class LeagueTable(QWidget):
 
         title_label = QLabel(league.__str__(), objectName="headingLbl")
         layout.addWidget(title_label)
-

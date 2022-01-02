@@ -1,5 +1,5 @@
 from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QPushButton
 
 
 class SideBar(QWidget):
@@ -12,4 +12,3 @@ class SideBar(QWidget):
 
         continue_button = QPushButton("Advance")
         layout.addWidget(continue_button)
-
