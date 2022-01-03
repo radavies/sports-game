@@ -39,28 +39,29 @@ class TeamGenerator:
             probabilities["Villages"] = 85
             probabilities["Education"] = 100
 
-        for counter in range(0, league.total_teams):
+        # + 1 to include the total in the range
+        for counter in range(0, league.total_teams + 1):
             type_choice = random.randint(1, 100)
             if type_choice <= probabilities["Cities"]:
-                league.teams.append(self._generate_team(
+                league.add_team_to_league(self._generate_team(
                     self._select_place(league.country, "Cities", True),
                     league.league_rank,
                     league.name
                 ))
             elif type_choice <= probabilities["Towns or Suburban Areas"]:
-                league.teams.append(self._generate_team(
+                league.add_team_to_league(self._generate_team(
                     self._select_place(league.country, "Towns or Suburban Areas", True),
                     league.league_rank,
                     league.name
                 ))
             elif type_choice <= probabilities["Villages"]:
-                league.teams.append(self._generate_team(
+                league.add_team_to_league(self._generate_team(
                     self._select_place(league.country, "Villages", True),
                     league.league_rank,
                     league.name
                 ))
             else:
-                league.teams.append(self._generate_team(
+                league.add_team_to_league(self._generate_team(
                     self._select_place(league.country, "Education", False),
                     league.league_rank,
                     league.name

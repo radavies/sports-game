@@ -105,7 +105,7 @@ class Game:
 
     def intro_continue(self):
         self.intro_window.close()
-        self.main_window = MainWindow(self.current_teams_league)
+        self.main_window = MainWindow(self.current_teams_league, self.current_selected_team)
         self.main_window.showMaximized()
 
     def debug_jumper(self):

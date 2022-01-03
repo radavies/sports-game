@@ -54,16 +54,16 @@ class PlayerStatsTests(unittest.TestCase):
                     stats.stat_modifiers[stat_group][stat][StatsPlayer.ModifierAge] = -5
 
     def test_get_overall_score_gk_no_modifiers(self):
-        self.assertEqual(self.gk_stats.get_overall_score(Positions.GK), 10)
+        self.assertEqual(10, self.gk_stats.get_overall_score(Positions.GK))
 
     def test_get_overall_score_outfield_no_modifiers(self):
-        self.assertEqual(self.outfield_stats.get_overall_score(Positions.Forward), 10)
+        self.assertEqual(10, self.outfield_stats.get_overall_score(Positions.Forward))
 
     def test_get_overall_score_gk_with_modifiers(self):
-        self.assertEqual(self.gk_stats_with_modifiers.get_overall_score(Positions.GK), 5)
+        self.assertEqual(5, self.gk_stats_with_modifiers.get_overall_score(Positions.GK))
 
     def test_get_overall_score_outfield_with_modifiers(self):
-        self.assertEqual(self.outfield_stats_with_modifiers.get_overall_score(Positions.Forward), 5)
+        self.assertEqual(5, self.outfield_stats_with_modifiers.get_overall_score(Positions.Forward))
 
 
 if __name__ == '__main__':

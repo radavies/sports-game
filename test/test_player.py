@@ -6,7 +6,7 @@ class PlayerTests(unittest.TestCase):
 
     def test_str(self):
         player = Player("Hello", "World", None, None)
-        self.assertEqual(str(player), "Hello World")
+        self.assertEqual("Hello World", str(player))
 
 
 if __name__ == '__main__':
