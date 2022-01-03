@@ -1,4 +1,4 @@
-from game.league import League
+from game.league_management.league import League
 from game.generators.team_generator import TeamGenerator
 
 

@@ -2,7 +2,7 @@ from PyQt6.QtCore import QObject, pyqtSignal
 from utils import get_place_data_from_file
 from game.generators.league_generator import LeagueGenerator
 from game.places import Places
-from game.leagues import Leagues
+from game.league_management.leagues import Leagues
 
 
 class InitialiseNewGameTask(QObject):

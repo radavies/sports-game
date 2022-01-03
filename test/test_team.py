@@ -19,7 +19,7 @@ class TeamTests(unittest.TestCase):
         team_list.sort()
 
         for x in range(0, len(team_list)):
-            self.assertEqual(team_list[x], ordered_list[x])
+            self.assertEqual(ordered_list[x], team_list[x])
 
 
 if __name__ == '__main__':

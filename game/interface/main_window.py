@@ -8,7 +8,7 @@ from game.enums.misc import Misc
 
 
 class MainWindow(QWidget):
-    def __init__(self, league):
+    def __init__(self, league, currently_selected_team):
         super().__init__()
 
         self.setWindowTitle(Misc.GameName.value)
@@ -35,7 +35,7 @@ class MainWindow(QWidget):
         col_three_layout = QVBoxLayout()
         col_three_layout.setAlignment(Qt.AlignmentFlag.AlignLeft)
 
-        league_table = LeagueTable(league)
+        league_table = LeagueTable(league, currently_selected_team)
 
         col_three_layout.addWidget(league_table)
 
