@@ -110,4 +110,14 @@ class Game:
 
     def debug_jumper(self):
         # DEBUG METHOD TO JUMP TO SPECIFIC POINTS
-        self.intro_continue()
+        from game.generators.fixture_generator import FixtureGenerator
+        from game.league_management.league import League
+        from game.team import Team
+
+        test = FixtureGenerator()
+        league = League("Test", "Scotland", "{} Bla", 0, 2, 18, None)
+
+        for x in range(0, 18):
+            league.add_team_to_league(Team("{} Team".format(str(x)), None, None, "Text"))
+
+        test.generate_fixtures_for_league(league)
