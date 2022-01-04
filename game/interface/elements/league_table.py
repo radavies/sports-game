@@ -23,21 +23,30 @@ class LeagueTable(QWidget):
         self.table.verticalHeader().hide()
 
         self.heading_brush = QBrush(QColor.fromRgb(148, 148, 148))
+        self.black_brush = QBrush(QColor.fromRgb(0, 0, 0))
 
         corner_heading = QTableWidgetItem("")
         corner_heading.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+        corner_heading.setFlags(Qt.ItemFlag.ItemIsEditable)
+        corner_heading.setForeground(self.black_brush)
         corner_heading.setBackground(self.heading_brush)
 
         team_heading = QTableWidgetItem("Team")
         team_heading.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+        team_heading.setFlags(Qt.ItemFlag.ItemIsEditable)
+        team_heading.setForeground(self.black_brush)
         team_heading.setBackground(self.heading_brush)
 
         played_heading = QTableWidgetItem("Played")
         played_heading.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+        played_heading.setFlags(Qt.ItemFlag.ItemIsEditable)
+        played_heading.setForeground(self.black_brush)
         played_heading.setBackground(self.heading_brush)
 
         points_heading = QTableWidgetItem("Points")
         points_heading.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+        points_heading.setFlags(Qt.ItemFlag.ItemIsEditable)
+        points_heading.setForeground(self.black_brush)
         points_heading.setBackground(self.heading_brush)
 
         self.table.setItem(0, 0, corner_heading)
@@ -48,8 +57,6 @@ class LeagueTable(QWidget):
         self.update_table(league, currently_selected_team)
 
         layout.addWidget(self.table)
-
-        # TODO - make the whole thing not editable
 
     def update_table(self, league, currently_selected_team):
         league_table = league.get_sorted_league_table()
@@ -62,6 +69,14 @@ class LeagueTable(QWidget):
             name_item = QTableWidgetItem(row.team.name)
             played_item = QTableWidgetItem(str(row.played))
             points_item = QTableWidgetItem(str(row.points()))
+
+            name_item.setFlags(Qt.ItemFlag.ItemIsEditable)
+            played_item.setFlags(Qt.ItemFlag.ItemIsEditable)
+            points_item.setFlags(Qt.ItemFlag.ItemIsEditable)
+
+            name_item.setForeground(self.black_brush)
+            played_item.setForeground(self.black_brush)
+            points_item.setForeground(self.black_brush)
 
             if row.team.name == currently_selected_team.name:
                 current_team_brush = QBrush(QColor.fromRgb(255, 218, 106))
@@ -79,9 +94,12 @@ class LeagueTable(QWidget):
                     points_item.setBackground(relegation_brush)
 
             number_heading = QTableWidgetItem(str(row_counter))
+
             if row_counter == 1:
                 number_heading = QTableWidgetItem("🏆")
 
+            number_heading.setFlags(Qt.ItemFlag.ItemIsEditable)
+            number_heading.setForeground(self.black_brush)
             number_heading.setBackground(self.heading_brush)
 
             self.table.setItem(row_counter, 0, number_heading)
