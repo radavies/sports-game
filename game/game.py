@@ -94,6 +94,8 @@ class Game:
         self.current_selected_team = returned["team"]
         self.current_teams_league = returned["league"]
 
+        self.leagues.generate_fixtures_for_leagues(self.current_selected_team)
+
         self.select_team_window.close()
 
         self.intro_window = IntroWindow(
@@ -110,4 +112,4 @@ class Game:
 
     def debug_jumper(self):
         # DEBUG METHOD TO JUMP TO SPECIFIC POINTS
-        self.intro_continue()
+        print("beep")

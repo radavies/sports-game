@@ -25,3 +25,11 @@ class Leagues:
             "team": found_team,
             "league": found_league
         }
+
+    def generate_fixtures_for_leagues(self, chosen_team):
+        for country in self.leagues:
+            for league in self.leagues[country]:
+                if league.name == chosen_team.current_league_name:
+                    league.generate_fixtures_with_chosen_team(chosen_team)
+                else:
+                    league.generate_fixtures()
