@@ -1,4 +1,5 @@
 from game.league_management.league_table_row import LeagueTableRow
+from game.generators.fixture_generator import FixtureGenerator
 
 
 class League:
@@ -14,6 +15,7 @@ class League:
         self.sponsor = sponsor
         self.teams = []
         self.table = []
+        self.fixtures = []
         self.league_above = None
         self.league_below = None
 
@@ -52,3 +54,11 @@ class League:
             else:
                 return False
         return position == self.total_teams
+
+    def generate_fixtures_with_chosen_team(self, team):
+        self.teams.insert(0, self.teams.pop(self.teams.index(team)))
+        self.generate_fixtures()
+
+    def generate_fixtures(self):
+        generator = FixtureGenerator()
+        self.fixtures = generator.generate_fixtures_for_league(self.teams)
