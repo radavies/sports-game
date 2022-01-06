@@ -1,7 +1,7 @@
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QTableWidget, QTableWidgetItem
 from PyQt6.QtGui import QBrush, QColor
-
+from utils import is_mac_dark_mode
 
 class LeagueTable(QWidget):
     def __init__(self, league, currently_selected_team):
@@ -64,6 +64,9 @@ class LeagueTable(QWidget):
 
         promo_brush = QBrush(QColor.fromRgb(187, 243, 187))
         relegation_brush = QBrush(QColor.fromRgb(255, 187, 187))
+        primary_brush = QBrush(QColor.fromRgb(255, 255, 255))
+        secondary_brush = QBrush(QColor.fromRgb(241, 242, 242))
+        use_primary_brush = True
 
         for row in league_table:
             name_item = QTableWidgetItem(row.team.name)
@@ -92,6 +95,14 @@ class LeagueTable(QWidget):
                     name_item.setBackground(relegation_brush)
                     played_item.setBackground(relegation_brush)
                     points_item.setBackground(relegation_brush)
+                elif is_mac_dark_mode():
+                    # Dark Mode theme on mac doesn't work properly for this widget
+                    brush_to_use = primary_brush if use_primary_brush else secondary_brush
+                    name_item.setBackground(brush_to_use)
+                    played_item.setBackground(brush_to_use)
+                    points_item.setBackground(brush_to_use)
+
+                use_primary_brush = not use_primary_brush
 
             number_heading = QTableWidgetItem(str(row_counter))
 
