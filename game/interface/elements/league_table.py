@@ -3,6 +3,7 @@ from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QTableWidget, QTableWi
 from PyQt6.QtGui import QBrush, QColor
 from utils import is_mac_dark_mode
 
+
 class LeagueTable(QWidget):
     def __init__(self, league, currently_selected_team):
         super().__init__()

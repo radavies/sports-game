@@ -18,6 +18,7 @@ class League:
         self.fixtures = []
         self.league_above = None
         self.league_below = None
+        self.current_match_day = 1
 
     def __str__(self):
         return self.name if self.sponsor is None else self.name_sponsor_format.format(self.sponsor.name)
@@ -62,3 +63,11 @@ class League:
     def generate_fixtures(self):
         generator = FixtureGenerator()
         self.fixtures = generator.generate_fixtures_for_league(self.teams)
+
+    def get_next_fixture_for_team(self, team):
+        if len(self.fixtures) > 0:
+            next_match_day = self.fixtures[0]
+            for fixture in next_match_day:
+                if team in fixture:
+                    return fixture
+        return None

@@ -8,7 +8,8 @@ from game.enums.misc import Misc
 from game.interface.start_window import StartWindow
 from game.interface.loading_window import LoadingWindow
 from game.interface.select_team_window import SelectTeamWindow
-from game.interface.initialise_new_game_task import InitialiseNewGameTask
+from game.interface.off_ui_thread_tasks.initialise_new_game_task import InitialiseNewGameTask
+from game.interface.off_ui_thread_tasks.advance_game_task import AdvanceGameTask
 from game.interface.intro_window import IntroWindow
 from game.interface.main_window import MainWindow
 
@@ -36,6 +37,9 @@ class Game:
         # Threads & Worker Tasks
         self.game_set_up_thread = None
         self.new_game_task = None
+
+        self.advance_game_thread = None
+        self.advance_game_task = None
 
     def start_game(self):
         app = QApplication(sys.argv)
@@ -107,8 +111,22 @@ class Game:
 
     def intro_continue(self):
         self.intro_window.close()
-        self.main_window = MainWindow(self.current_teams_league, self.current_selected_team)
+        self.main_window = MainWindow(self.current_teams_league, self.current_selected_team, self.advance_the_game)
         self.main_window.showMaximized()
+
+    def advance_the_game(self):
+        self.advance_game_thread = QtCore.QThread()
+        self.advance_game_task = AdvanceGameTask()
+        self.advance_game_task.moveToThread(self.advance_game_thread)
+
+        self.advance_game_thread.started.connect(self.advance_game_task.run)
+        self.advance_game_task.finished.connect(self.advance_game_thread.quit)
+        self.advance_game_thread.finished.connect(self.main_window.enable_advance_button)
+
+        # self.new_game_task.places_signal.connect(self.update_places)
+        # self.new_game_task.league_signal.connect(self.update_leagues)
+
+        self.advance_game_thread.start()
 
     def debug_jumper(self):
         # DEBUG METHOD TO JUMP TO SPECIFIC POINTS
