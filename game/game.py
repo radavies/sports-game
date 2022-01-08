@@ -12,6 +12,7 @@ from game.interface.off_ui_thread_tasks.initialise_new_game_task import Initiali
 from game.interface.off_ui_thread_tasks.advance_game_task import AdvanceGameTask
 from game.interface.intro_window import IntroWindow
 from game.interface.main_window import MainWindow
+from game.interface.match_sim_window import MatchSimWindow
 
 
 class Game:
@@ -33,6 +34,7 @@ class Game:
         self.select_team_window = None
         self.intro_window = None
         self.main_window = None
+        self.match_sim_window = None
 
         # Threads & Worker Tasks
         self.game_set_up_thread = None
@@ -116,17 +118,28 @@ class Game:
 
     def advance_the_game(self):
         self.advance_game_thread = QtCore.QThread()
-        self.advance_game_task = AdvanceGameTask()
+        self.advance_game_task = AdvanceGameTask(self.leagues, self.current_selected_team, self.current_teams_league)
         self.advance_game_task.moveToThread(self.advance_game_thread)
 
         self.advance_game_thread.started.connect(self.advance_game_task.run)
         self.advance_game_task.finished.connect(self.advance_game_thread.quit)
-        self.advance_game_thread.finished.connect(self.main_window.enable_advance_button)
+        self.advance_game_thread.finished.connect(self.advance_the_game_finished)
 
-        # self.new_game_task.places_signal.connect(self.update_places)
-        # self.new_game_task.league_signal.connect(self.update_leagues)
+        self.advance_game_task.match_start_signal.connect(self.open_match_sim_window)
+        self.advance_game_task.match_update_signal.connect(self.update_match_sim_window)
 
         self.advance_game_thread.start()
+
+    def open_match_sim_window(self, match_start):
+        self.match_sim_window = MatchSimWindow(match_start.league, match_start.home_team, match_start.away_team)
+        self.match_sim_window.show()
+
+    def update_match_sim_window(self, match_update):
+        self.match_sim_window.update_match(match_update)
+
+    def advance_the_game_finished(self):
+        self.match_sim_window.enable_continue_button()
+        self.main_window.enable_advance_button()
 
     def debug_jumper(self):
         # DEBUG METHOD TO JUMP TO SPECIFIC POINTS

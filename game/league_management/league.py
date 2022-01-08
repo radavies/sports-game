@@ -71,3 +71,13 @@ class League:
                 if team in fixture:
                     return fixture
         return None
+
+    def get_next_match_day(self):
+        if len(self.fixtures) > 0:
+            return self.fixtures[0]
+        return None
+
+    def advance_to_next_match_day(self):
+        if len(self.fixtures) > 0:
+            self.fixtures.pop(0)
+            self.current_match_day += 1

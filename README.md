@@ -8,11 +8,6 @@ Silly Sports Sim Game
   
 ### What UI do we need?
 
-* Story / intro page 
-  * Explain the game
-  * Use the team name / city etc 
-  * "Welcome to your club boss"
-
 * Dashboard
   * Where the game is played from - opens up other UIs as required
   * Player overview
@@ -26,11 +21,11 @@ Silly Sports Sim Game
 
 
 ### ToDo
-* Generate fixtures
 * Save / load data structures etc
 
 ### Ideas
 
+* Sound? (goals scored, crowd noise)
 * board expectations?
 * Add managers
 * Add European Teams

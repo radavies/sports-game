@@ -13,5 +13,20 @@ QListWidget {
 }
 
 QLabel#headingLbl {
- font-size: 25px;
+    font-size: 25px;
+}
+
+QLabel#subHeadingBoldLbl {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+QLabel#boldUnderlineLbl {
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+QLabel#boldLbl {
+    font-weight: bold;
 }

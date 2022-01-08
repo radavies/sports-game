@@ -32,6 +32,7 @@ class SelectTeamWindow(QWidget):
             team_list = QListWidget()
             team_list.itemClicked.connect(self.selection_changed)
 
+            league.teams.sort()
             for team in league.teams:
                 team_list.addItem(team.name)
             league_layout.addWidget(team_list)
@@ -48,6 +49,7 @@ class SelectTeamWindow(QWidget):
             team_list = QListWidget()
             team_list.itemClicked.connect(self.selection_changed)
 
+            league.teams.sort()
             for team in league.teams:
                 team_list.addItem(team.name)
             league_layout.addWidget(team_list)
