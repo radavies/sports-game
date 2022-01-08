@@ -24,22 +24,22 @@ class LeagueTableRowTests(unittest.TestCase):
     def test_lt_points(self):
         row = LeagueTableRow(self.team, 2, 1, 1, 0, 4, 2)
         other = LeagueTableRow(self.other_team, 2, 0, 1, 1, 2, 4)
-        self.assertFalse(row.__lt__(other))
+        self.assertTrue(row.__lt__(other))
 
     def test_lt_gd(self):
         row = LeagueTableRow(self.team, 2, 1, 1, 0, 4, 2)
         other = LeagueTableRow(self.other_team, 2, 1, 1, 0, 2, 4)
-        self.assertFalse(row.__lt__(other))
+        self.assertTrue(row.__lt__(other))
 
     def test_lt_gf(self):
         row = LeagueTableRow(self.team, 2, 1, 1, 0, 10, 5)
         other = LeagueTableRow(self.other_team, 2, 1, 1, 0, 5, 0)
-        self.assertFalse(row.__lt__(other))
+        self.assertTrue(row.__lt__(other))
 
     def test_lt_won(self):
         row = LeagueTableRow(self.team, 3, 1, 0, 2, 1, 1)
         other = LeagueTableRow(self.other_team, 3, 0, 3, 0, 1, 1)
-        self.assertFalse(row.__lt__(other))
+        self.assertTrue(row.__lt__(other))
 
     def test_lt_alpha(self):
         row = LeagueTableRow(self.team, 3, 1, 0, 2, 1, 1)

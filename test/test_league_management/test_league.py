@@ -18,7 +18,7 @@ class LeagueTests(unittest.TestCase):
             league.add_team_to_league(Team(str(x), None, None, league.name))
 
         self.assertEqual(test_number, len(league.teams))
-        self.assertEqual(test_number, len(league.table))
+        self.assertEqual(test_number, len(league.league_table_rows))
 
     def test_is_in_promo_zone_no_above_league_not_first(self):
         league = League("World", "Scotland", "{} World", 0, 2, 18, None)

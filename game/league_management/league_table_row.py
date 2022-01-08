@@ -21,7 +21,7 @@ class LeagueTableRow:
                 if self.goals_for == other.goals_for:
                     if self.won == other.won:
                         return self.team.name < other.team.name
-                    return self.won < other.won
-                return self.goals_for < other.goals_for
-            return self.goal_difference() < other.goal_difference()
-        return self.points() < other.points()
+                    return self.won > other.won
+                return self.goals_for > other.goals_for
+            return self.goal_difference() > other.goal_difference()
+        return self.points() > other.points()

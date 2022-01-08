@@ -139,6 +139,7 @@ class Game:
 
     def advance_the_game_finished(self):
         self.match_sim_window.enable_continue_button()
+        self.main_window.update_after_match_day(self.current_teams_league, self.current_selected_team)
         self.main_window.enable_advance_button()
 
     def debug_jumper(self):

@@ -113,3 +113,24 @@ class FixtureGeneratorTests(unittest.TestCase):
             self.assertIn(first_team, first_fixture)
             self.assertEqual(is_home_team, first_fixture[0] is first_team)
             is_home_team = not is_home_team
+
+    def test_generate_fixtures_for_league_all_teams_have_a_match(self):
+        number_of_teams = 18
+
+        league = League("Test", "Scotland", "{} Test", 0, 2, number_of_teams, None)
+        fixture_tracker = {}
+
+        for counter in range(0, number_of_teams):
+            team = Team("{} Team".format(str(counter)), None, None, league.name)
+            league.add_team_to_league(team)
+            fixture_tracker[team.name] = False
+
+        match_days = self.generator.generate_fixtures_for_league(league.teams)
+
+        for match_day in match_days:
+            for fixture in match_day:
+                fixture_tracker[fixture[0].name] = True
+                fixture_tracker[fixture[1].name] = True
+
+        for result in fixture_tracker.values():
+            self.assertTrue(result)

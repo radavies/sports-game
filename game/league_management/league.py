@@ -14,22 +14,24 @@ class League:
         self.total_teams = total_teams
         self.sponsor = sponsor
         self.teams = []
-        self.table = []
+        self.league_table_rows = {}
         self.fixtures = []
         self.league_above = None
         self.league_below = None
         self.current_match_day = 1
+        self.results = {}
 
     def __str__(self):
         return self.name if self.sponsor is None else self.name_sponsor_format.format(self.sponsor.name)
 
     def add_team_to_league(self, team):
         self.teams.append(team)
-        self.table.append(LeagueTableRow(team, 0, 0, 0, 0, 0, 0))
+        self.league_table_rows[team.name] = LeagueTableRow(team, 0, 0, 0, 0, 0, 0)
 
     def get_sorted_league_table(self):
-        self.table.sort()
-        return self.table
+        table = list(self.league_table_rows.values())
+        table.sort()
+        return table
 
     def set_league_above(self, league):
         self.league_above = league
@@ -81,3 +83,38 @@ class League:
         if len(self.fixtures) > 0:
             self.fixtures.pop(0)
             self.current_match_day += 1
+
+    def save_match_result_and_update_table(self, result):
+        if self.current_match_day in self.results:
+            self.results[self.current_match_day].append(result)
+        else:
+            self.results[self.current_match_day] = [result]
+
+        home_team_won = result.home_scored > result.away_scored
+        draw = result.home_scored == result.away_scored
+
+        # Update home team's record
+        home_league_table_row = self.league_table_rows[result.home_team.name]
+        home_league_table_row.played += 1
+        if home_team_won:
+            home_league_table_row.won += 1
+        elif draw:
+            home_league_table_row.drawn += 1
+        else:
+            home_league_table_row.lost += 1
+
+        home_league_table_row.goals_for += result.home_scored
+        home_league_table_row.goals_against += result.away_scored
+
+        # Update away team's record
+        away_league_table_row = self.league_table_rows[result.away_team.name]
+        away_league_table_row.played += 1
+        if home_team_won:
+            away_league_table_row.lost += 1
+        elif draw:
+            away_league_table_row.drawn += 1
+        else:
+            away_league_table_row.won += 1
+
+        away_league_table_row.goals_for += result.away_scored
+        away_league_table_row.goals_against += result.home_scored

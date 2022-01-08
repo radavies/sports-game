@@ -39,3 +39,6 @@ Silly Sports Sim Game
 * https://doc.qt.io/qt.html
 * https://doc.qt.io/qtforpython-6/api.html
 * https://www.riverbankcomputing.com/static/Docs/PyQt6/
+* If PyQt thread debugging doesn't work - https://youtrack.jetbrains.com/issue/PY-46891
+  * "I modified the pydev_monkey_qt.py by adding pyside6 to the import "trys". This works, as long as you do not use numpy. Once you do, you get the error specified here:"
+  * Also add PYDEVD_PYQT_MODE=pyqt6 to the env variable of debugger

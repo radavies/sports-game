@@ -59,8 +59,8 @@ class MatchSimWindow(QWidget):
 
     def update_match(self, match_update):
         self.mins_played_label.setText("{} mins".format(match_update.mins_played))
-        self.home_team_score_label.setText(str(match_update.home_score))
-        self.away_team_score_label.setText(str(match_update.away_score))
+        self.home_team_score_label.setText(str(match_update.home_scored))
+        self.away_team_score_label.setText(str(match_update.away_scored))
 
         for event in match_update.new_events:
             self.match_updates.insertItem(0, event)

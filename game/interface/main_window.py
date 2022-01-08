@@ -36,15 +36,15 @@ class MainWindow(QWidget):
         col_three_layout = QVBoxLayout()
         col_three_layout.setAlignment(Qt.AlignmentFlag.AlignLeft)
 
-        league_table = LeagueTable(league, currently_selected_team)
+        self.league_table = LeagueTable(league, currently_selected_team)
 
         fixture = league.get_next_fixture_for_team(currently_selected_team)
-        next_fixture = NextFixture()
+        self.next_fixture = NextFixture()
         if fixture is not None:
-            next_fixture.update_fixture(fixture[0], fixture[1], league.current_match_day)
+            self.next_fixture.update_fixture(fixture[0], fixture[1], league.current_match_day)
 
-        col_three_layout.addWidget(league_table)
-        col_three_layout.addWidget(next_fixture)
+        col_three_layout.addWidget(self.league_table)
+        col_three_layout.addWidget(self.next_fixture)
 
         layout.addLayout(col_one_layout)
         layout.addLayout(col_two_layout)
@@ -52,3 +52,11 @@ class MainWindow(QWidget):
 
     def enable_advance_button(self):
         self.side_bar.enable_advance_button()
+
+    def update_after_match_day(self, league, currently_selected_team):
+        self.league_table.update_table(league, currently_selected_team)
+        fixture = league.get_next_fixture_for_team(currently_selected_team)
+        if fixture is not None:
+            self.next_fixture.update_fixture(fixture[0], fixture[1], league.current_match_day)
+        else:
+            self.next_fixture.update_no_fixture()

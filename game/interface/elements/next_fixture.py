@@ -19,3 +19,7 @@ class NextFixture(QWidget):
     def update_fixture(self, home_team, away_team, match_day):
         self.title_label.setText("Match Day {}".format(match_day))
         self.game_label.setText("{} Vs {}".format(home_team, away_team))
+
+    def update_no_fixture(self):
+        self.title_label.setText("Next Game")
+        self.game_label.setText("No game scheduled...")

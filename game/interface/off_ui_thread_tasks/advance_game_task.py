@@ -21,18 +21,26 @@ class AdvanceGameTask(QObject):
 
         for country in self.leagues.leagues:
             for league in self.leagues.leagues[country]:
-                if league.name == self.currently_selected_league.name:
-                    self.simulate_match_day(league.get_next_match_day(), league)
-                    league.advance_to_next_match_day()
+                self.simulate_match_day(
+                    league.get_next_match_day(),
+                    league,
+                    league.name == self.currently_selected_league.name)
+                league.advance_to_next_match_day()
 
         self.finished.emit()
 
-    def simulate_match_day(self, match_day, league):
+    def simulate_match_day(self, match_day, league, is_currently_selected_league):
         for fixture in match_day:
-            if fixture[0] == self.currently_selected_team or fixture[1] == self.currently_selected_team:
+            result = None
+            if is_currently_selected_league and\
+                    (fixture[0] == self.currently_selected_team or fixture[1] == self.currently_selected_team):
                 self.match_start_signal.emit(MatchStart(league, fixture[0], fixture[1]))
                 time.sleep(0.5)
-                self.fully_simulate_fixture(fixture)
+                result = self.fully_simulate_fixture(fixture)
+            else:
+                result = self.quick_simulate_fixture(fixture)
+
+            league.save_match_result_and_update_table(result)
 
     def fully_simulate_fixture(self, fixture):
         match_sim = MatchSimulator(fixture[0], fixture[1])
@@ -40,3 +48,10 @@ class AdvanceGameTask(QObject):
         while not match_sim.match_complete:
             update = match_sim.step()
             self.match_update_signal.emit(update)
+
+        return match_sim.result
+
+    @staticmethod
+    def quick_simulate_fixture(fixture):
+        match_sim = MatchSimulator(fixture[0], fixture[1])
+        return match_sim.quick_sim()
