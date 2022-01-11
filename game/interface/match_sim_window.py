@@ -1,10 +1,16 @@
-from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QListWidget
+from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QListWidget, QListWidgetItem
+from PyQt6.QtGui import QIcon
+from pathlib import Path
+from game.enums.misc import Misc
 
 
 class MatchSimWindow(QWidget):
     def __init__(self, league, home_team, away_team):
         super().__init__()
+
+        self.icon_folder = Path(Misc.ImageFolderPath.value)
+
         self.setWindowTitle("{} Vs {}".format(home_team.name, away_team.name))
 
         layout = QVBoxLayout()
@@ -35,6 +41,7 @@ class MatchSimWindow(QWidget):
 
         self.match_updates = QListWidget()
         self.match_updates.setWordWrap(True)
+        self.match_updates.setIconSize(QSize(35, 35))
 
         self.continue_button = QPushButton("Continue")
         self.continue_button.setEnabled(False)
@@ -63,4 +70,6 @@ class MatchSimWindow(QWidget):
         self.away_team_score_label.setText(str(match_update.away_scored))
 
         for event in match_update.new_events:
-            self.match_updates.insertItem(0, event)
+            if event is not None:
+                event_icon = self.icon_folder / event[0]
+                self.match_updates.insertItem(0, QListWidgetItem(QIcon(str(event_icon)), event[1]))

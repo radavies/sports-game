@@ -31,7 +31,6 @@ class AdvanceGameTask(QObject):
 
     def simulate_match_day(self, match_day, league, is_currently_selected_league):
         for fixture in match_day:
-            result = None
             if is_currently_selected_league and\
                     (fixture[0] == self.currently_selected_team or fixture[1] == self.currently_selected_team):
                 self.match_start_signal.emit(MatchStart(league, fixture[0], fixture[1]))
@@ -44,9 +43,8 @@ class AdvanceGameTask(QObject):
 
     def fully_simulate_fixture(self, fixture):
         match_sim = MatchSimulator(fixture[0], fixture[1])
-
         while not match_sim.match_complete:
-            update = match_sim.step()
+            update = match_sim.step(True)
             self.match_update_signal.emit(update)
 
         return match_sim.result
