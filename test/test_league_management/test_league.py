@@ -1,6 +1,6 @@
 import unittest
 from game.league_management.league import League
-from game.team import Team
+from game.teams_and_players.team import Team
 from game.sponsor import Sponsor
 
 

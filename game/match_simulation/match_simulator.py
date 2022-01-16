@@ -1,5 +1,6 @@
 import time
 import random
+from game.teams_and_players.team_manager import TeamManager
 from game.match_simulation.match_update import MatchUpdate
 from game.match_simulation.match_result import MatchResult
 from game.match_simulation.dialog import Dialog
@@ -15,6 +16,12 @@ class MatchSimulator:
     def __init__(self, home_team, away_team):
         self.home_team = home_team
         self.away_team = away_team
+
+        self.home_team_manager = TeamManager(self.home_team)
+        self.away_team_manager = TeamManager(self.away_team)
+        self.home_squad = self.home_team_manager.build_match_squad()
+        self.away_squad = self.away_team_manager.build_match_squad()
+
         self.home_scored = 0
         self.away_scored = 0
         self.match_complete = False

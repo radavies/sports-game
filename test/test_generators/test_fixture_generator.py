@@ -1,7 +1,7 @@
 import unittest
 from game.generators.fixture_generator import FixtureGenerator
 from game.league_management.league import League
-from game.team import Team
+from game.teams_and_players.team import Team
 
 
 class FixtureGeneratorTests(unittest.TestCase):

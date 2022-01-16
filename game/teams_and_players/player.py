@@ -16,3 +16,6 @@ class Player:
 
     def __str__(self):
         return "{} {}".format(self.name_first, self.name_last)
+
+    def __lt__(self, other):
+        return self.overall_stat_total() < other.overall_stat_total()

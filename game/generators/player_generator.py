@@ -1,8 +1,8 @@
 import names
 import random
 from game.enums.positions import Positions
-from game.player import Player
-from game.player_stats import PlayerStats
+from game.teams_and_players.player import Player
+from game.teams_and_players.player_stats import PlayerStats
 from game.enums.stats_player import StatsPlayer
 
 

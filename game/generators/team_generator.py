@@ -1,7 +1,7 @@
 import random
 from utils import get_name_data_from_file
 from game.generators.player_generator import PlayerGenerator
-from game.team import Team
+from game.teams_and_players.team import Team
 from game.names import Names
 
 

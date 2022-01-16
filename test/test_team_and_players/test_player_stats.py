@@ -1,5 +1,5 @@
 import unittest
-from game.player_stats import PlayerStats
+from game.teams_and_players.player_stats import PlayerStats
 from game.enums.stats_player import StatsPlayer
 from game.enums.positions import Positions
 

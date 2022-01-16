@@ -1,5 +1,5 @@
 import unittest
-from game.team import Team
+from game.teams_and_players.team import Team
 
 
 class TeamTests(unittest.TestCase):
